@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+	--dark-cyan-color: hsl(158, 36%, 37%);
+	--cream-color: hsl(30, 38%, 92%);
+	--very-dark-blue-color: hsl(212, 21%, 14%);
+	--dark-grayish-blue-color: hsl(228, 12%, 48%);
+	--white-color: hsl(0, 0%, 100%);
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--dark-grayish-blue-color);
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--cream-color);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	max-width: 375px;
+	flex-direction: column;
+	padding: 1rem;
+	height: 95vh;
+}
+
+.card {
+	background-color: var(--white-color);
+	border-radius: .5rem;
+	overflow: hidden;
+	margin: auto;
+}
+
+figure, img {
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+.description {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#category {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: small;
+}
+
+
+h1, #price {
+	font-family: 'Fraunces', sans-serif;
+}
+
+h1 {
+	color: var(--very-dark-blue-color);
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+}
+
+#price {
+	color: var(--dark-cyan-color);
+	font-size: xx-large;
+}
+
+#old-price {
+	margin-left: 1rem;
+	font-size: small;
+	text-decoration: line-through;
+}
+
+#add-to-cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	background-color: var(--dark-cyan-color);
+	width: 100%;
+	border-radius: .5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--white-color);
+	margin-top: 1rem; 
+}
+
+#add-to-cart > span {
+	margin: .75rem 1rem;
+	color: inherit;
+}
+
+.img-desktop {
+	display:none;
+}
+
+@media screen and (min-width: 768px) {
+	.img-mobile {
+		display: none;
+	}	
+
+	.img-desktop {
+		display: block;
+	}
+
+	main {
+		max-width: 1440px;
+	}
+
+	figure {
+		width: 50%;
+	}
+
+	.description {
+		width: 50%;
+		padding: 1.75rem 2rem;
+	}
+
+	.card {
+		display: flex;
+		max-width: 600px;
+	}
+}
+
+.attribution {
+    display: none;
+    text-align: center;
+}
