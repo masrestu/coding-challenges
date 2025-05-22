@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Screenshot of QR Code Component](/design/screenshot-desktop.jpeg)
-![Mobile Screenshot of QR Code Component](/design/screenshot-mobile.png)
+![Desktop Screenshot of QR Code Component](design/screenshot-desktop.jpeg)
+![Mobile Screenshot of QR Code Component](design/screenshot-mobile.png)
 
 ### Links
 
