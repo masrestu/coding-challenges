@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+	<main>
+		<div class="card">
+			<!-- Rating state start -->
+			<div id="rating-state">
+				<div class="rounded-shape">
+					<img src="images/icon-star.svg" alt="icon-star" />
+				</div>
+				<h1>How did we do?</h1>
+				<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+				<div class="ratings">
+					<div class="rounded-shape rating">
+						<span class="rate-value">1</span>
+					</div>
+					<div class="rounded-shape rating">
+						<span class="rate-value">2</span>
+					</div>
+					<div class="rounded-shape rating">
+						<span class="rate-value">3</span>
+					</div>
+					<div class="rounded-shape rating">
+						<span class="rate-value">4</span>
+					</div>
+					<div class="rounded-shape rating">
+						<span class="rate-value">5</span>
+					</div>
+				</div>
+
+				<button id="submit">Submit</button>
+			</div>
+
+			<!-- Rating state end -->
+
+			<!-- Thank you state start -->
+			<div id="thank-you-state">
+				<div class="image-success">
+					<img src="images/illustration-thank-you.svg" alt="Thank you">
+				</div>
+				<div class="selected-info">
+					<p>You selected <span class="rated">4</span> out of 5</p>
+				</div>
+				<div class="thank-you-text">
+					<h1>Thank you!</h1> 
+					<p>
+						We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+					</p>
+				</div>
+			</div>
+			<!-- Thank you state end -->
+		</div>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://github.com/masrestu/">masrestu</a>.
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
