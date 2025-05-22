@@ -64,7 +64,7 @@ p {
   margin-inline: 0.25rem;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 40rem) {
   main {
     max-width: 23.5rem;
   }
