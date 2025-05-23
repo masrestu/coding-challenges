@@ -1,0 +1,478 @@
+:root {
+    --blue-header: hsl(196, 100%, 50%);
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --alpha-moderate-cyan: hsl(167, 59%, 75%);
+    --alpha-white: hsla(0, 0%, 100%, 0.25);
+}
+
+html {
+    font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: var(--white);
+    min-width: 350px;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav li,
+.menu li,
+.purpose article a,
+footer .social svg {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    position: absolute;
+    background-color: var(--white);
+    width: 90%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 1.5rem);
+    display: none;
+}
+
+header input {
+    display: none;
+}
+
+label:has(input:checked) + nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    font-size: 1.25rem;
+    padding: 2rem;
+    color: var(--dark-grayish-blue);
+}
+
+nav ul li:last-of-type {
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--yellow);
+    padding: .75rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+nav::before {
+    content: "";
+    display: block;
+    transform: translateY(-100%);
+    width: .75rem;
+    height: .75rem;
+    top: 0;
+    right: 0;
+    border: .75rem solid var(--white);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+}
+
+.hero .content,
+.products .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+.purpose article {
+    padding: 4.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.purpose article h2 {
+    font-size: 1.75rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.purpose article p {
+    color: var(--dark-grayish-blue);
+    line-height: 1.625rem;
+}
+
+.purpose article .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.purpose article .button .line {
+    height: .5rem;
+    width: 100%;
+    background-color: var(--yellow);
+    border-radius: .5rem;
+    position: absolute;
+    opacity: .2;
+    bottom: 0;
+    transform: translateY(30%);
+}
+
+.purpose article:last-of-type .button .line {
+    background-color: var(--soft-red);
+}
+
+.purpose article .button:hover .line {
+    opacity: 1;
+}
+
+.purpose article a {
+    text-decoration: none;
+    color: var(--dark-blue-header);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-size: .9rem;
+    position: relative;
+    padding: 0 .5rem;
+}
+
+.products article {
+    position: relative;
+}
+
+.products .content {
+    justify-content: flex-end;
+    padding: 4.5rem 1rem;
+    color: var(--dark-blue);
+    gap: 1.5rem;
+}
+
+.products .content h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.products .content p {
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.testimonials {
+    padding: 4rem 1.25rem;
+    display: grid;
+    row-gap: 4rem;
+}
+
+.testimonials h4 {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--grayish-blue);
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.testimonials .comment {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.testimonials img {
+    display: block;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.testimonials p {
+    margin: 1.25rem 0;
+    color: var(--very-dark-desaturated-blue);
+    line-height: 1.75rem;
+}
+
+.testimonials h5 {
+    font-size: 1rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.testimonials span {
+    font-size: .8rem;
+    color: var(--grayish-blue);
+}
+
+footer .decorations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .decorations img {
+    display: block;
+    width: 100%;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    background-color: var(--alpha-moderate-cyan);
+    color: var(--dark-moderate-cyan);
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+}
+
+footer .menu {
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+footer .social {
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+footer svg path {
+    fill: var(--dark-moderate-cyan);
+}
+
+footer .logo {
+    transform: scale(1.5);
+}
+
+header .desktop-element,
+main .desktop-element,
+footer .desktop-element {
+    display: none !important;
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    header .mobile-element,
+    main .mobile-element,
+    footer .mobile-element {
+        display: none !important;
+    }
+
+    header .desktop-element,
+    main .desktop-element,
+    footer .desktop-element {
+        display: block !important;
+    }
+
+    header {
+        padding: 2rem;
+        align-items: center;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+        transform: none;
+        background-color: transparent;
+        left: unset;
+        top: unset;
+        width: unset;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        color: var(--white);
+        font-size: 1rem;
+        gap: 2.75rem;
+    }
+
+    nav ul li:last-of-type {
+        background-color: var(--white);
+    }
+
+    nav ul li:last-of-type:hover {
+        background-color: var(--alpha-white);
+        color: var(--white);
+    }
+
+    .hero .content {
+        top: -3.5rem;
+        gap: 5rem;
+    }
+
+    .hero .content h1 {
+        font-size: 3rem;
+        letter-spacing: .5rem;
+    }
+
+    .purpose {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .purpose article:first-of-type {
+        grid-row: 1;
+    }
+
+    .purpose article {
+        align-items: start;
+        justify-content: center;
+        padding: 5rem 7rem 5rem 8rem;
+        gap: 2rem;
+    }
+
+    .purpose article h2 {
+        font-size: 2.25rem;
+        color: var(--very-dark-desaturated-blue);
+        text-align: left;
+    }
+
+    .purpose article p {
+        color: var(--dark-grayish-blue);
+        line-height: 1.625rem;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .products {
+        display: flex;
+    }
+
+    .products .content {
+        padding-bottom: 3.5rem;
+    }
+
+    .products .content p {
+        max-width: 19rem;
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 8rem 7rem;
+        row-gap: 5rem;
+        column-gap: 3rem;
+    }
+
+    .testimonials h4 {
+        grid-column: 1 / span 3;
+        letter-spacing: 6px;
+    }
+
+    .testimonials p {
+        margin: 3rem 0;
+    }
+
+    footer .decorations {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer .menu {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    footer .menu li:hover {
+        color: var(--white);
+    }
+
+    footer .social {
+        gap: 1.5rem;
+    }
+
+    footer .social svg:hover path {
+        fill: var(--white);
+    }
+}

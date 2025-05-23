@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="card">
+                <div class="profile">
+                    <img src="./images/image-jeremy.png" alt="Profile picture">
+                    <div class="title">
+                        <p>Report for</p>
+                        <h1>Jeremy Robson</h1>
+                    </div>
+                </div>
+                <div class="period">
+                    <label for="daily">
+                        <input type="radio" name="period" id="daily" value="daily">
+                        <span>Daily</span>
+                    </label>
+                    <label for="weekly">
+                        <input type="radio" name="period" id="weekly" value="weekly" checked>
+                        <span>Weekly</span>
+                    </label>
+                    <label for="monthly">
+                        <input type="radio" name="period" id="monthly" value="monthly">
+                        <span>Monthly</span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <main>
+        </main>
+
+        <footer class="attribution" hidden>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/masrestu">masrestu</a>.
+        </footer>
+    </div>
+</body>
+
+</html>

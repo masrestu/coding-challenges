@@ -1,0 +1,155 @@
+:root {
+	--custom-yellow: hsl(47, 88%, 63%);
+	--custom-white: hsl(0, 0%, 100%);
+	--custom-grey: hsl(0, 0%, 50%);
+	--custom-black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+	font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	box-sizing: border-box;
+	line-height: 1;
+}
+
+body {
+	font-family: 'Figtree', sans-serif;
+	background-color: var(--custom-yellow);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--custom-black);
+}
+
+.container {
+	max-width: 375px;
+	padding: 1.5rem;
+}
+
+.card {
+	background-color: var(--custom-white);
+	padding: 1.4rem;
+	border-radius: 1.25rem;
+	border: 2px solid var(--custom-black);
+	box-shadow: 0.5rem 0.5rem 0 0 var(--custom-black);
+	display: flex;
+	flex-direction: column;
+	gap: 1.15rem;
+}
+
+.card-banner {
+	width: 100%;
+	border-radius: 0.75rem;
+	height: 12.5rem;
+	background-image: url('../assets/images/illustration-article.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0.25rem;
+}
+
+.card-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.9rem;
+}
+
+.card-header .tag {
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 800;
+	background-color: var(--custom-yellow);
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.75rem;
+}
+
+.card-header .publish-date {
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.card-header h1 {
+	margin-top: 0.325rem;
+}
+
+.card-header h1 a {
+	font-size: 1.25rem;
+	font-weight: 800;
+	text-decoration: none;
+	color: inherit;
+}
+
+.card-header h1 a:hover {
+	color: var(--custom-yellow);
+}
+
+.card-body {
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: var(--custom-grey);
+}
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-weight: 800;
+	gap: 0.75rem;
+	font-size: 0.875rem;
+	margin-top: .375rem;
+}
+
+.card-footer::before {
+	content: '';
+	height: 2rem;
+	width: 2rem;
+	background-image: url('../assets/images/image-avatar.webp');
+	background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 27rem;
+	}
+
+	.card-header {
+		gap: 1rem;
+	}
+
+	.card-header .tag {
+		font-size: 0.875rem;
+		padding: 0.5rem 0.8rem;
+	}
+
+	.card-header .publish-date {
+		font-size: 0.875rem;
+	}
+
+	.card-header h1 a {
+		font-size: 1.5rem;
+	}
+
+	.card-body {
+		font-size: 1rem;
+	}
+
+	.card-footer {
+		margin-top: 0.4rem;
+	}
+}

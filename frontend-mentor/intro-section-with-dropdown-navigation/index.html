@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-and-menu">
+                <img src="./images/logo.svg" alt="logo">
+                <img src="./images/icon-menu.svg" alt="menu" id="menu-open">
+            </div>
+            <div id="overlay"></div>
+            <nav>
+                <img src="./images/icon-close-menu.svg" alt="logo" id="menu-close">
+                <ul>
+                    <li class="menu menu-parent">
+                        <a href="#" class="menu-label">Features</a>
+                        <ul class="submenu">
+                            <li class="submenu-label"><img src="./images/icon-todo.svg" alt="todo icon"><a href="#">Todo List</a></li>
+                            <li class="submenu-label"><img src="./images/icon-calendar.svg" alt="calendar icon"><a href="#">Calendar</a></li>
+                            <li class="submenu-label"><img src="./images/icon-reminders.svg" alt="reminders icon"><a href="#">Reminders</a></li>
+                            <li class="submenu-label"><img src="./images/icon-planning.svg" alt="planning icon"><a href="#">Planning</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu menu-parent">
+                        <a href="#" class="menu-label">Company</a>
+                        <ul class="submenu">
+                            <li class="submenu-label"><a href="#">History</a></li>
+                            <li class="submenu-label"><a href="#">Our Team</a></li>
+                            <li class="submenu-label"><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="menu-label">Careers</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="menu-label">About</a>
+                    </li>
+                </ul>
+                <div class="action-link">
+                    <a id="btnLogin">Login</a>
+                    <a id="btnRegister">Register</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" class="mobile">
+                <img src="./images/image-hero-desktop.png" alt="image-hero-desktop" class="desktop">
+            </div>
+
+            <div class="info">
+                <div class="description">
+                    <h1>Make remote work</h1>
+        
+                    <p>
+                        Get your team in sync, no matter your location. Streamline processes,
+                        create team rituals, and watch productivity soar.
+                    </p>
+        
+                    <a>Learn more</a>
+                </div>
+                <div class="client">
+                    <img src="./images/client-databiz.svg" alt="databiz">
+                    <img src="./images/client-audiophile.svg" alt="audiophile">
+                    <img src="./images/client-meet.svg" alt="meet">
+                    <img src="./images/client-maker.svg" alt="maker">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="attribution" hidden>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/masrestu">masrestu</a>.
+    </div>
+</body>
+
+</html>

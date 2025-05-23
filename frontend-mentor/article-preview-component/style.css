@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+	--color-gray-600: hsl(217, 19%, 35%);
+	--color-gray-400: hsl(214, 17%, 51%);
+	--color-gray-300: hsl(212, 23%, 69%);
+	--color-gray-200: hsla(212, 23%, 69%, .3);
+	--color-gray-100: hsl(210, 46%, 95%);
+}
+
+html {
+	font-size: 13px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--color-gray-100);
+}
+
+main {
+	width: 100%;
+	position: relative;
+	min-height: 100vh;
+}
+
+svg {
+	cursor: pointer;
+}
+
+.card {
+	background-color: white;
+	width: 100%;
+	max-width: 25rem;
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-header {
+	height: 15rem;
+	background-image: url('images/drawers.jpg');
+	background-position: top 30% left 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.card-body {
+	padding: 1.5rem 2.6rem;
+}
+
+.card-title {
+	color: var(--color-gray-600);
+	font-size: 1.25rem;
+}
+
+.card-text {
+	color: var(--color-gray-400);
+	margin-top: 1.5rem;
+}
+
+.author {
+	display: flex;
+	margin-top: 3rem;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author-info {
+	display: flex;
+}
+
+.author-photo {
+	display: inline-block;
+}
+
+.author-photo {
+	width: 3rem;
+	border-radius: 50%;
+}
+
+.author-desc {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: 1rem; 
+	gap: 5px; 
+}
+
+.author-desc__name {
+	font-weight: 700;
+	color: var(--color-gray-600);
+}
+
+.author-desc__date {
+	color: var(--color-gray-300);
+}
+
+.btn-share {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: .75rem .675rem;  
+	border-radius: 50%;
+	background-color: var(--color-gray-100); 
+	color: var(--color-gray-600);
+	cursor: pointer;
+}
+
+.tooltip-share {
+	position: fixed;
+	bottom: -6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-gray-600); 
+	width: 100%;
+	color: var(--color-gray-300);
+	padding: 1.7rem 2.6rem;
+	transition: all .3s ease-in-out;
+}
+
+.tooltip-share.active {
+	bottom: 0;
+}
+
+.left-section {
+	display: flex;
+	align-items: center;
+}
+
+.tooltip-share > .left-section > span {
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .35rem;
+}
+
+.tooltip-share > .left-section > svg {
+	margin-left: 1rem; 
+}
+
+.tooltip-share > .left-section > svg:first-of-type {
+	margin-left: 1.5rem; 
+}
+
+.tooltip-share > .right-section > .btn-share.btn-back {
+	background-color: var(--color-gray-400);
+}
+
+.tooltip-share > .right-section > .btn-share.btn-back > svg path {
+	fill: var(--color-gray-100); 
+}
+
+.attribution {
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
+	.card {
+		flex-direction: row;
+		max-width: 55rem;  
+		overflow: visible;
+	}
+
+	.card-header {
+		width: 100%;
+		height: auto;
+		background-size: cover;
+		background-position: top 0 left 0;
+		border-radius: 1rem 0 0 1rem;  
+	}
+
+	.card-body {
+		padding: 2.5rem 2.6rem;
+		width: 130%;
+	}
+
+	.card-title {
+		font-size: 1.55rem;
+	}
+
+	.author {
+		margin-top: 1.2rem;
+	}
+
+	.author-desc {
+		gap: 2px;
+	}
+
+	.card-text {
+		color: var(--color-gray-400);
+		margin-top: .75rem;
+	}
+
+	.btn-share.btn-ready.active {
+		background-color: var(--color-gray-400);
+	}
+	
+	.btn-share.btn-ready.active > svg path {
+		fill: var(--color-gray-100); 
+	}
+
+	.tooltip-share {
+		position: absolute;
+		bottom: 7rem;
+		right: -5rem;
+		width: 19rem;
+		border-radius: .75rem; 
+		padding: 1.2rem 2.6rem;
+		opacity: 0;
+	}
+
+	.tooltip-share::after {
+		content: '';
+		height: 1rem;
+		width: auto;
+		aspect-ratio: 1;
+		background-color: var(--color-gray-600); 
+		position: absolute;
+		bottom: .2rem;
+		left: 50%;
+		transform: rotate(45deg) translateX(49%) translateY(51%); 
+	}
+
+	.tooltip-share.active {
+		bottom: 7rem;
+		right: -5rem;
+		width: 19rem;
+		opacity: 1;  
+	}
+
+	.left-section {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.right-section {
+		display: none;
+	}
+}

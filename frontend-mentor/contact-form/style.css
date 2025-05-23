@@ -1,0 +1,274 @@
+:root {
+    --light-green: hsl(148, 38%, 91%);
+    --green: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 56%);
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(186, 15%, 59%);
+    --dark-grey: hsl(187, 24%, 22%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark-grey);
+}
+
+body {
+    background-color: var(--light-green);
+    position: relative;
+}
+
+.container {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+body, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    background-color: var(--white);
+    padding: 1.25rem;
+    border-radius: .75rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+    font-weight: 700;
+}
+
+form,
+.query-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: .75rem;
+    row-gap: 1.25rem;
+}
+
+.query-options {
+    row-gap: .75rem;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.inputgroup:has(#consent) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inputgroup > label::after,
+.inputgroup > span::after {
+    content: "*";
+    color: var(--green);
+    margin-left: .4rem;
+}
+
+label,
+.error,
+span {
+    font-size: .9rem;
+}
+
+.query-opt span {
+    font-size: 1rem;
+}
+
+.inputgroup .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    border: 1px solid var(--medium-grey);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--green);
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea,
+.query-opt {
+    border-radius: .375rem;
+    padding: .75rem 1.25rem;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.query-opt {
+    border: 1px solid var(--medium-grey);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+
+.radio-btn, .check-btn {
+    width: 1rem;
+    aspect-ratio: 1;
+    border: 1px solid var(--medium-grey);
+    margin-right: .25rem;
+}
+
+.query-opt:has(input:checked) .radio-btn {
+    background: url(./assets/images/icon-radio-selected.svg) center;
+    border-color: var(--green);
+}
+
+.query-opt:has(input:checked) {
+    background-color: var(--light-green);
+    border-color: var(--green);
+}
+
+.radio-btn {
+    border-radius: 50%;
+}
+
+.inputgroup:has(#consent:checked) .check-btn {
+    background: url(./assets/images/icon-checkbox-check.svg) center;
+}
+
+.error {
+    display: none;
+    color: var(--red);
+}
+
+.inputgroup:has(input:invalid) > .error {
+    display: block;
+}
+
+textarea {
+    resize: none;
+    height: 13rem;
+}
+
+label[for="consent"] {
+    flex-basis: 80%;
+    margin-left: .25rem;
+}
+
+#submitBtn {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.alert-success {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: .5rem 1rem;
+    border-radius: .375rem;
+    margin-top: 1rem;
+    padding: 1.25rem;
+    transition: all .3s ease-in-out;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(./assets/images/icon-success-check.svg) center no-repeat;
+    margin-right: .5rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+    color: var(--medium-grey);
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        max-width: 770px;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    label,
+    .error,
+    span {
+        font-size: 1rem;
+    }
+
+    form,
+    .query-options {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 2.25rem;
+    }
+
+    .inputgroup:has(#email),
+    .inputgroup:has(.query-options),
+    .inputgroup:has(textarea),
+    .inputgroup:has(#consent),
+    #submitBtn {
+        grid-column: span 2;
+    }
+
+    textarea {
+        height: 6rem;
+    }
+}

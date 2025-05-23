@@ -1,0 +1,161 @@
+:root {
+	--custom-white: hsl(0, 0%, 100%);
+	--custom-light-pink: hsl(275, 100%, 97%);
+	--custom-grayish-purple: hsl(292, 16%, 49%);
+	--custom-dark-purple: hsl(292, 42%, 14%);
+	--custom-purple: #AD28EB;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+	font-style: italic;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 9rem 0;
+	background-color: var(--custom-light-pink);
+	background-image: url('../assets/images/background-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.container {
+	max-width: 375px;
+	padding: 0 1.5rem;
+}
+
+.card {
+	background-color: var(--custom-white);
+	border-radius: .5rem;
+	padding: 1.5rem;
+	color: var(--custom-grayish-purple);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	margin-bottom: .4rem;
+	gap: 1.5rem;
+}
+
+header img {
+	width: 1.5rem;
+}
+
+header h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--custom-dark-purple);
+}
+
+details {
+	width: 100%;
+	padding: 1.15rem 0;
+	border-bottom: 3px solid var(--custom-light-pink);
+}
+
+details:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+details summary {
+	cursor: pointer;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--custom-dark-purple);
+}
+
+details summary:hover {
+	color: var(--custom-purple);
+}
+
+details summary::after {
+	content: '';
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background-image: url('../assets/images/icon-plus.svg');
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: contain;
+}
+
+details[open] summary::after {
+	background-image: url('../assets/images/icon-minus.svg');
+}
+
+details p {
+	font-size: .875rem;
+	margin-top: 1.4rem;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-image: url('../assets/images/background-pattern-desktop.svg');
+		padding: 10.375rem 0;
+		background-repeat: repeat-x;
+	}
+
+	.container {
+		max-width: 40.5rem;
+	}
+
+	.card {
+		border-radius: 1rem;
+		padding: 2.5rem 2.5rem;
+	}
+
+	header {
+		margin-bottom: .875rem;
+		gap: 1.5rem;
+	}
+	
+	header img {
+		width: 2.5rem;
+	}
+	
+	header h1 {
+		font-size: 3.5rem;
+	}
+	
+	details {
+		padding: 1.375rem 0;
+	}
+	
+	details summary {
+		column-gap: 1.75rem;
+	}
+	
+	details summary h2 {
+		font-size: 1.125rem;
+	}
+	
+	details p {
+		font-size: 1rem;
+	}
+
+}

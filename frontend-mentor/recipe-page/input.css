@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 600 700;
+}
+
+@layer utilities {
+  body {
+    @apply bg-black text-custom-wengebrown font-outfit xl:bg-custom-eggshell xl:p-36
+  }
+
+  main {
+    @apply max-w-[375px] mx-auto bg-custom-white grid xl:max-w-[720px] xl:rounded-2xl xl:p-4 xl:pb-0
+  }
+
+  section.banner {
+    @apply xl:mx-4 xl:mt-4
+  }
+
+  section.banner img {
+    @apply rounded-lg
+  }
+
+  section:not(.banner) {
+    @apply flex flex-col mx-8 py-8 gap-4 xl:mx-4
+  }
+
+  section.hero, section.ingredients, section.instructions {
+    @apply border-b-custom-lightgrey border-b
+  }
+
+  section > .subtitle {
+    @apply text-custom-nutmeg text-3xl font-young-serif
+  }
+
+  .hero > .title {
+    @apply text-4xl font-young-serif text-custom-darkcharcoal xl:text-[2.5rem]
+  }
+
+  .hero > .summary {
+    @apply flex flex-col gap-2 bg-[rgba(123,40,79,.1)] px-6 py-4 rounded-lg
+  }
+
+  .hero > .summary > .summary__title {
+    @apply font-bold text-custom-darkraspberry text-xl
+  }
+
+  .hero > .summary > ul > li {
+    @apply list-disc list-outside ms-6 ps-4 text-custom-darkraspberry
+  }
+
+  .hero > .summary > ul > li > p {
+    @apply text-custom-nutmeg
+  }
+
+  .hero > .summary > ul > li > p > span {
+    @apply font-bold
+  }
+
+  .ingredients > ul > li {
+    @apply list-disc list-outside ms-6 ps-4 text-custom-nutmeg
+  }
+
+  .ingredients > ul > li > p {
+    @apply text-custom-wengebrown
+  }
+
+  .instructions > ol > li {
+    @apply list-decimal list-outside ms-6 ps-4 text-custom-nutmeg font-bold mt-2
+  }
+
+  .instructions > ol > li > p {
+    @apply text-custom-wengebrown font-normal
+  }
+
+  .instructions > ol > li > p > span {
+    @apply font-bold
+  }
+
+  ul > li > p {
+    @apply align-middle inline-block
+  }
+
+  .nutrition__table {
+    @apply text-left
+  }
+
+  .nutrition__table tr td {
+    @apply py-2 w-1/2
+  }
+
+  .nutrition__table tr:not(:last-of-type) td {
+    @apply border-b-custom-lightgrey border-b
+  }
+
+  .nutrition__table tr td:first-of-type {
+    @apply ps-8
+  }
+
+  .nutrition__table tr td:last-of-type {
+    @apply font-bold ps-2 text-custom-nutmeg
+  }
+}

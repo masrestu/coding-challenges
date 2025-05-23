@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+	<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+	<link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body class="bg-grayish-300 flex items-center justify-center min-h-screen font-roboto">
+	<main>
+
+		<!-- Sign-up form start -->
+		<section
+			class="landing-page bg-grayish-100 max-w-sm mx-auto my-0 lg:max-w-4xl lg:grid lg:grid-cols-desktop lg:rounded-3xl lg:py-6 lg:pe-6">
+			<div
+				class="hero m-0 p-0 lg:order-2 pt-[76%] bg-hero-mobile bg-no-repeat bg-cover bg-center lg:bg-hero-desktop lg:pt-[148%] lg:bg-contain">
+			</div>
+			<div class="description p-6 lg:flex lg:flex-col lg:justify-center lg:mx-8">
+				<h1 class="text-4xl font-bold mt-4 lg:text-[3.5rem]">Stay updated!</h1>
+				<p class="mt-6 text-[15px] lg:text-base">Join 60,000+ product managers receiving monthly updates on:</p>
+				<ul class="mt-6 text-[15px] lg:text-base lg:mt-4">
+					<li class="mt-2 flex gap-4 justify-start items-start">
+						<img src="./assets/images/icon-list.svg" alt="" class="block">
+						<p>Product discovery and building what matters</p>
+					</li>
+					<li class="mt-2 flex gap-4 justify-start items-start">
+						<img src="./assets/images/icon-list.svg" alt="" class="block">
+						<p>Measuring to ensure updates are a success</p>
+					</li>
+					<li class="mt-2 flex gap-4 justify-start items-start">
+						<img src="./assets/images/icon-list.svg" alt="" class="block">
+						<p>And much more!</p>
+					</li>
+				</ul>
+
+				<form>
+					<fieldset class="grid auto-rows-auto mt-8">
+						<input type="email" placeholder="email@company.com" id="email"
+							class="peer/email mt-2 order-3 col-span-2 block border rounded-md border-grayish-200 px-6 py-3 w-full text-base font-normal cursor-pointer invalid:text-tomato invalid:bg-red-100 invalid:outline-tomato invalid:border-tomato">
+						<label for="email" class="font-bold text-xs inline-block">Email address</label>
+						<span
+							class="error-message text-tomato inline-block opacity-0 text-xs font-bold peer-invalid/email:opacity-100 justify-self-end">Valid
+							email required</span>
+					</fieldset>
+
+					<input type="submit" value="Subscribe to monthly newsletter"
+						class="btn-submit mt-6 bg-grayish-400 text-grayish-100 font-bold py-4 px-6 w-full rounded-md text-sm cursor-pointer hover:bg-gradient-to-r hover:from-pink-400 hover:to-orange-400">
+				</form>
+
+			</div>
+		</section>
+
+		<!-- Sign-up form end -->
+		<section
+			class="success-page bg-grayish-100 auto-rows-auto grid-rows-success-mobile items-end max-w-sm px-4 min-h-screen py-8 mx-auto my-0 lg:flex-col lg:max-w-lg lg:min-h-fit lg:rounded-3xl lg:py-16 lg:px-14 hidden lg:hidden">
+			<div class="summary">
+				<img src="./assets/images/icon-success.svg" alt="" class="lg:m-0 lg:mb-10 mb-10">
+				<!-- Success message start -->
+				<h2 class="text-4xl font-bold lg:text-[3.25rem] lg:leading-[3rem]">Thanks for subscribing!</h2>
+				<p class="mt-6">
+					A confirmation email has been sent to <span class="font-bold"
+						id="email-confirm">ash@loremcompany.com</span>.
+					Please open it and click the button inside to confirm your subscription.
+				</p>
+			</div>
+			<button
+				class="btn-dismiss mt-6 block bg-grayish-400 text-grayish-100 font-bold py-4 px-6 w-full rounded-md text-sm cursor-pointer hover:bg-gradient-to-r hover:from-pink-400 hover:to-orange-400 lg:mt-10">Dismiss
+				message</button>
+			<!-- Success message end -->
+		</section>
+	</main>
+
+	<div class="attribution" hidden>
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">masrestu</a>.
+	</div>
+
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+	--primary-color-1: hsl(185, 75%, 39%);
+	--primary-color-2: hsl(229, 23%, 23%);
+	--primary-color-3: hsl(227, 10%, 46%);
+	--neutral-color-1: hsl(0, 0%, 59%);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: bottom 60vh right 45vw, top 53vh left 45vw;
+	background-color: var(--primary-color-1);
+	background-size: 35em, 35em;
+}
+
+main, .card {
+	width: 100%;
+}
+
+main {
+	height: auto;
+	min-height: 100vh;
+}
+
+img {
+	display: block;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1em;
+	overflow: hidden;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	max-width: 18em;
+}
+
+.card-header {
+	width: 100%;
+	position: relative;
+}
+
+.profile-photo {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(50%); 
+	border-radius: 50%;
+	border: .3em solid white;
+	background-color: white;
+	overflow: hidden;
+}
+
+h1 {
+	margin-top: 4em;
+}
+
+h1 > span {
+	color: var(--neutral-color-1);
+	font-weight: 400;
+	display: inline-block;
+	margin-left: .3em;
+}
+
+.profile-city {
+	color: var(--neutral-color-1);
+	font-size: .8em;
+	margin-top: .5em;
+}
+
+.card-footer {
+	border-top: 1px solid hsla(0, 0%, 59%, 0.2);
+	width: 100%;
+	margin-top: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1.5em 0;
+}
+
+.stat {
+	text-align: center;
+}
+
+.stat-num {
+	font-weight: bold;
+}
+
+.stat-name {
+	font-size: .6em;
+	letter-spacing: .15em;
+	color: var(--neutral-color-1);
+	margin-top: .4em;
+}
+
+aside {
+	display: none;
+}
+
+@media screen and (min-width:600px) {
+	body {
+		background-position: bottom 45vh right 50vw, top 53vh left 45vw;
+		background-color: var(--primary-color-1);
+		background-size: 50em, 55em;
+	}
+}

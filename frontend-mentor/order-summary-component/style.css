@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+	font-family: 'Red Hat Display', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	height: 90vh;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-image: url('images/pattern-background-mobile.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100%;
+	background-color: var(--pale-blue);
+}
+
+.card {
+	/* display: none; */
+	width: 100%;
+	max-width: 330px;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.card-header, .card-body {
+	background-color: white;
+}
+
+.card-header > img {
+	display: block;
+	width: 100%;
+}
+
+.card-body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: .75rem 1.6rem;
+}
+
+.card-body > h1 {
+	font-size: 1.4rem;
+	font-weight: 900;
+	margin: 1rem;
+}
+
+.card-body > p {
+	font-size: 16px;
+	text-align: center;
+	color: var(--desaturated-blue);
+}
+
+.card-body > .selected-plan {
+	width: 100%;
+	background-color: var(--very-pale-blue);
+	border-radius: .75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1.5rem 0;
+}
+
+.selected-plan * {
+	display: block;
+}
+
+.selected-plan__package {
+	display: flex;
+	align-items: center;
+}
+
+.selected-plan__package > * {
+	font-size: small;
+}
+
+.plan-text {
+	margin-left: 1rem;
+}
+
+.plan-info {
+	font-weight: 900;
+}
+
+.plan-price {
+	color: var(--desaturated-blue);
+	display: block;
+}
+
+.selected-plan > a {
+	font-size: small;
+	font-weight: 900;
+}
+
+.selected-plan > a:hover {
+	opacity: 0.7;
+}
+
+.btn-proceed {
+	background-color: var(--bright-blue);
+	color: white;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	border-radius: .75rem;
+	font-size: 1rem;
+	box-shadow: 0 .8rem .8rem .1rem var(--pale-blue);
+}
+
+.btn-proceed:hover {
+	opacity: 0.7;
+}
+
+.selected-plan > a, button {
+	cursor: pointer;
+}
+
+.btn-cancel {
+	background-color: transparent;
+	color: var(--desaturated-blue);
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.btn-cancel:hover {
+	color: var(--dark-blue);
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	main {
+		background-image: url('images/pattern-background-desktop.svg');
+	}
+
+	.card {
+		max-width: 440px;
+	}
+
+	.card-body {
+		padding: 2rem 3rem;
+	}
+
+	.card-body > h1 {
+		font-size: 1.5rem;
+		font-weight: 900;
+		margin-bottom: 1.2rem;
+	}
+
+	.card-body > p {
+		line-height: 1.5;
+	}
+
+	.card-body > .selected-plan {
+		padding: 1.5rem;
+	}
+
+	.plan-text * {
+		font-size: medium;
+	}
+
+	.plan-info {
+		padding-bottom: .4rem;
+	}
+
+	.selected-plan > a {
+		font-size: .875rem;
+		font-weight: 900;
+	}
+
+	.btn-proceed {
+		margin-top: .8rem;
+	}
+
+	.btn-cancel {
+		margin-top: 1rem;
+	}
+
+}

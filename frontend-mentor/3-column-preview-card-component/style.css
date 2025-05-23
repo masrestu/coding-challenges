@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+	--primary-color-1: hsl(31, 77%, 52%);
+	--primary-color-2: hsl(184, 100%, 22%);
+	--primary-color-3: hsl(179, 100%, 13%);
+	--neutral-color-1: hsla(0, 0%, 100%, 0.75);
+	--neutral-color-2: hsl(0, 0%, 95%);
+}
+
+* {
+	font-size: 15px;
+	font-family: 'Lexend Deca', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main, .card, .card-item {
+	width: 100%;
+}
+
+main {
+	height: 97em;
+	position: relative;
+	background-color: var(--neutral-color-1);
+}
+
+.card {
+	max-width: 22em;
+	display: flex;
+	flex-direction: column;
+	border-radius: .5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: .7em;
+	overflow: hidden;
+}
+
+.card-item {
+	flex-direction: column;
+	display: flex;
+	align-items: flex-start;
+	padding: 3.2em;
+}
+
+.card-sedans {
+	background-color: var(--primary-color-1);
+}
+
+.card-suvs {
+	background-color: var(--primary-color-2);
+}
+
+.card-luxury {
+	background-color: var(--primary-color-3);
+}
+
+.card-title {
+	font-family: 'Big Shoulders Display', cursive;
+	color: var(--neutral-color-2);
+	margin-top: .8em;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.card-text {
+	color: var(--neutral-color-1);
+	margin-top: 1.8em;
+	line-height: 1.7;
+}
+
+.cta {
+	border: none;
+	background-color: var(--neutral-color-2);
+	padding: 1em 2em;
+	margin-top: 1.8em;
+	border-radius: 2em;
+	cursor: pointer;
+}
+
+.card-sedans > .cta {
+	color: var(--primary-color-1);
+}
+
+.card-suvs > .cta {
+	color: var(--primary-color-2);
+}
+
+.card-luxury > .cta {
+	color: var(--primary-color-3);
+}
+
+.card-sedans > .cta:active {
+	background-color: var(--primary-color-1);
+	color: var(--neutral-color-2);
+	border: 2px solid var(--neutral-color-2);
+}
+
+.card-suvs > .cta:active {
+	background-color: var(--primary-color-2);
+	color: var(--neutral-color-2);
+	border: 2px solid var(--neutral-color-2);
+}
+
+.card-luxury > .cta:active {
+	background-color: var(--primary-color-3);
+	color: var(--neutral-color-2);
+	border: 2px solid var(--neutral-color-2);
+}
+
+footer {
+	display: none;
+}
+
+@media screen and (min-width:600px) {
+	main {
+		height: auto;
+		min-height: 100vh;
+	}
+
+	.card {
+		flex-direction: row;
+		max-width: 60em; 
+	}
+
+	.card-item {
+		padding-right: 2.8em;
+	}
+
+	.card-title {
+		font-size: 2.5em;
+	}
+
+	.cta {
+		margin-top: 5em;
+	}
+}

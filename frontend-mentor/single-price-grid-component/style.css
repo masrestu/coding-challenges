@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+	--clr-primary-1: hsl(179, 62%, 43%);
+	--clr-primary-2: hsl(71, 73%, 54%);
+	--clr-neutral-1: hsl(204, 43%, 93%);
+	--clr-neutral-2: hsl(218, 22%, 67%);
+}
+
+html {
+	font-size: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+}
+
+body {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-neutral-1);
+	color: var(--clr-neutral-2);
+	padding: 2rem;
+}
+
+main {
+	background-color: white;
+	display: grid;
+	grid-template: 4fr 5fr / 1fr 1fr;
+	max-width: 40rem;
+	border-radius: .5rem;
+	overflow: hidden;
+	box-shadow: 0 1rem 1.5rem -.5rem lightslategray;
+}
+
+.header, .subscribe, .why-us {
+	padding: 2.4rem;
+}
+
+.header {
+	grid-column: span 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.header > h1 {
+	color: var(--clr-primary-1);
+	font-size: 1.45rem;
+}
+
+.header > h2 {
+	color: var(--clr-primary-2);
+	font-size: 1.1rem;
+	margin-top: 1.2rem;
+}
+
+.header > p {
+	line-height: 1.5;
+	margin-top: .5rem;
+}
+
+.subscribe {
+	background-color: var(--clr-primary-1);
+	color: var(--clr-neutral-1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.subscribe > h2 {
+	font-size: 1.1rem;
+}
+
+.subscribe > .price {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.subscribe > .price > .dollar {
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+
+.subscribe > .price > .expired {
+	font-size: .9rem;
+	opacity: .7;
+}
+
+.subscribe > button {
+	border: none;
+	background-color: var(--clr-primary-2);
+	padding: .9rem;
+	border-radius: .25em;
+	font-size: 1.1rem; 
+	color: var(--clr-neutral-1);
+	box-shadow: 0 .75rem 1rem -.25rem gray;
+	margin-top: 2rem;
+}
+
+.why-us {
+	background-color: var(--clr-primary-1);
+	color: var(--clr-neutral-1);
+	opacity: .9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem; 
+}
+
+.why-us > h2 {
+	font-size: 1.1rem;
+}
+
+.why-us > ul > li {
+	list-style-type: none;
+	opacity: .7; 
+	line-height: 1.4;
+	font-size: .9rem;
+}
+
+@media screen and (max-width:800px) {
+	main {
+		grid-template: repeat(3, auto) / 1fr;
+	}
+
+	.header, .subscribe, .why-us {
+		padding: 1.6rem;
+	}
+
+	.header {
+		grid-column: 1;
+		gap: .5rem; 
+	}
+
+	.header > h1 {
+		font-size: 1.22rem;
+	}
+
+	.header > h2 {
+		font-size: .92rem; 
+	}
+
+	.header > p {
+		font-size: .85rem;
+		line-height: 1.8;
+	}
+
+	.subscribe > .price {
+		margin-top: 1rem;
+	}
+
+	.subscribe > button {
+		margin-top: 2rem;
+	}
+
+	.why-us {
+		gap: 1rem;
+	}
+}

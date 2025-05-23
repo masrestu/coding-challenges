@@ -1,0 +1,242 @@
+:root {
+	--custom-purple: hsl(259, 100%, 65%);
+	--custom-light-red: hsl(0, 100%, 67%);
+	--custom-white: hsl(0, 0%, 100%);
+	--custom-off-white: hsl(0, 0%, 94%);
+	--custom-light-grey: hsl(0, 0%, 86%);
+	--custom-smokey-grey: hsl(0, 1%, 44%);
+	--custom-off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Italic.ttf);
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-Bold.ttf);
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+	font-style: italic;
+	font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--custom-off-black);
+}
+
+html {
+	font-size: 32px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	padding-top: 2.75rem;
+	background-color: var(--custom-off-white);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	max-width: 375px;
+	padding: 0 .5rem;
+}
+
+.card {
+	background-color: var(--custom-white);
+	border-radius: .75rem;
+	padding: 1.6rem .75rem 1.5rem;
+	border-bottom-right-radius: 3rem;
+}
+
+.inputs {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: .5rem;
+}
+
+.inputs label {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 3px;
+	display: block;
+  color: var(--custom-smokey-grey);
+}
+
+.inputs input {
+	width: 100%;
+	margin-top: .25rem;
+	padding: 10px 0 10px .5rem;
+	border-radius: .2rem;
+	font-size: 20px;
+	border: 1px solid var(--custom-light-grey);
+}
+
+.inputs input:focus {
+  outline: none;
+  border: 1px solid var(--custom-purple);
+}
+
+.inputs .invalid {
+  margin-top: 12px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--custom-light-red);
+  display: none;
+}
+
+.inputs:has(.error) {
+  margin-bottom: 3px;
+}
+
+.inputs .error {
+  color: var(--custom-light-red);
+}
+
+.inputs .error input {
+  border: 1px solid var(--custom-light-red);
+}
+
+.inputs .error .invalid {
+  display: block;
+}
+
+.action {
+  width: 100%;
+  position: relative;
+  height: 2rem;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.action hr {
+  width: 100%;
+  border-top: 1px solid var(--custom-light-grey);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.action .button {
+  position: absolute;
+  display: block;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--custom-purple);
+  background-image: url(./assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+  cursor: pointer;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.action .button:hover {
+  background-color: var(--custom-off-black);
+}
+
+.result h2 {
+	font-size: 56px;
+	font-weight: 800;
+	font-style: italic;
+	line-height: 62px;
+	letter-spacing: -1px;
+}
+
+.result h2 span {
+	color: var(--custom-purple);
+  margin-right: 11px;
+  letter-spacing: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 4.8rem;
+  }
+  
+  main {
+    max-width: 27.25rem;
+  }
+  
+  .card {
+    border-radius: .75rem;
+    padding: 1.9rem 1.75rem 1.6rem;
+    border-bottom-right-radius: 6.5rem;
+    width: 30rem;
+  }
+  
+  .inputs {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .inputs label {
+    font-size: 14px;
+    letter-spacing: 4px;
+    width: 5rem;
+  }
+  
+  .inputs input {
+    margin-top: 10px;
+    padding: 12px 0 11px .75rem;
+    font-size: 1rem;
+  }
+  
+  .action {
+    width: 100%;
+    position: relative;
+    height: 3rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .action hr {
+    width: 100%;
+    border-top: 1px solid var(--custom-light-grey);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .action .button {
+    right: 0;
+    background-size: 46px;
+    transform: translateX(0);
+  }
+  
+  .result h2 {
+    font-size: 104px;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+  }
+  
+  .result h2 span {
+    margin-right: 12px;
+  }
+}

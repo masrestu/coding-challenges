@@ -1,0 +1,251 @@
+:root {
+	--blue: hsl(223, 87%, 63%);
+	--pale-blue: hsl(223, 100%, 88%);
+	--light-red: hsl(354, 100%, 66%);
+	--gray: hsl(0, 0%, 59%);
+	--very-dark-blue: hsl(209, 33%, 12%);
+}
+
+html {
+	font-size: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.attribution {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	bottom: 1rem;
+	font-size: .5rem;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 20% 50% 30%;
+	padding: 2rem 0;
+}
+
+body > * {
+	width: 100%;
+	max-width: 16rem;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header > img {
+	display: block;
+	margin: 1.5rem auto;
+	width: 3rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 1.2rem;
+	color: var(--gray);
+}
+
+h1 > span {
+	font-weight: 700;
+	font-size: smaller;
+	color: var(--very-dark-blue);
+	font-size: inherit;
+}
+
+section p {
+	font-size: .7rem;
+	line-height: 0;
+}
+
+form {
+	margin-top: .8rem;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+fieldset {
+	display: flex;
+	border: none;
+	width: 14rem;
+	position: relative;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	border: 1px solid var(--pale-blue);
+	border-radius: 1rem;
+	padding: .5rem 1.5rem;
+	text-align: left;
+	color: var(--very-dark-blue);
+	width: 100%;
+}
+
+input::placeholder {
+	color: var(--pale-blue);
+}
+
+input:focus {
+	outline: none;
+}
+
+.error-input > input {
+	border: 1px solid var(--light-red);
+}
+
+.error-input::after {
+	position: absolute;
+	content: "Please provide a valid email address";
+	color: var(--light-red);
+	font-size: .5rem;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(125%);
+	font-style: italic;
+	width: 100%;
+}
+
+.error-input ~ button {
+	margin-top: .8rem;
+}
+
+button {
+	border: none;
+	margin: 0 auto;
+	border-radius: 1rem;
+	padding: .5rem 1.5rem;
+	background-color: var(--blue);
+	color: whitesmoke;
+	font-weight: 600;
+	width: 14rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--pale-blue);
+}
+
+main > img {
+	display: block;
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: .5rem;
+}
+
+ul {
+	display: flex;
+	margin: 1rem auto;
+	align-items: center;
+	justify-content: center;
+	gap: .65rem;
+}
+
+ul > li {
+	list-style: none;
+	border: 1px solid var(--pale-blue);
+	border-radius: 100%;
+	height: 1.5rem;
+	width: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--blue);
+	font-size: .75rem;
+	cursor: pointer;
+}
+
+ul > li:hover {
+	background-color: var(--blue);
+	color: whitesmoke;
+}
+
+ul > li > i {
+	display: block;
+}
+
+footer > p {
+	font-size: .5rem;
+	color: var(--gray);
+}
+
+@media only screen and (min-width: 800px) {
+	body > * {
+		width: 100%;
+		max-width: 24rem;
+		margin: 0 auto;
+	}
+
+	header > img {
+		width: 3.5rem;
+	}
+
+	main {
+		gap: 3rem;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+	}
+
+	section p {
+		font-size: .75rem;
+	}
+
+	form {
+		margin-top: 1rem;
+		flex-direction: row;
+		gap: .3rem;
+	}
+
+	form > * {
+		font-size: .65rem;
+	}
+
+	input {
+		padding: .5rem 1rem;
+		border-radius: 2rem;
+	}
+
+	.error-input::after {
+		bottom: 0;
+		left: 0;
+		transform: translateX(1rem) translateY(150%);
+	}
+
+	button {
+		width: 8.5rem; 
+		border-radius: 2rem;
+		font-size: .65rem;
+	}
+}

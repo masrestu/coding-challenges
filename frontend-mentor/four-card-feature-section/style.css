@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+	--clr-primary-1: hsl(0, 78%, 62%);
+	--clr-primary-2: hsl(180, 62%, 55%);
+	--clr-primary-3: hsl(34, 97%, 64%);
+	--clr-primary-4: hsl(212, 86%, 64%);
+	--clr-neutral-1: hsl(234, 12%, 34%);
+	--clr-neutral-2: hsl(229, 6%, 66%);
+	--clr-neutral-3: hsl(0, 0%, 98%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 6rem 2rem;
+	background-color: var(--clr-neutral-3);
+	gap: 5rem;
+}
+
+h1, h2, p {
+	text-align: center;
+}
+
+h1, h2 {
+	font-size: 1.6rem;
+	color: var(--clr-neutral-1);
+}
+
+h1 {
+	font-weight: 200;
+}
+
+p {
+	font-size: 1.05rem;
+	margin-top: 1rem;
+	font-weight: 200;
+	color: var(--clr-neutral-2);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.card {
+	border-radius: .3rem;
+	background-color: white;
+	box-shadow: 0 .3rem 2rem -.4rem var(--clr-neutral-2);
+	padding: 1.5rem 2rem;
+	border-top: .2rem solid black;
+	max-width: 22rem;
+}
+
+.middle-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.left-section > .card {
+	border-top: .2rem solid var(--clr-primary-2);
+}
+
+.middle-section > .card:first-of-type {
+	border-top: .2rem solid var(--clr-primary-1);
+}
+
+.middle-section > .card:last-of-type {
+	border-top: .2rem solid var(--clr-primary-3);
+}
+
+.right-section > .card {
+	border-top: .2rem solid var(--clr-primary-4);
+}
+
+.card-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--clr-neutral-1);
+}
+
+.card-text {
+	margin-top: .3rem;
+	font-size: .875rem;
+	color: var(--clr-neutral-2);
+}
+
+.card-icon {
+	margin-top: 1.5rem;
+	text-align: right;
+}
+
+footer {
+	display: none;
+}
+
+@media screen and (min-width:800px) {
+	body {
+		padding: 0;
+		gap: 7vh;
+	}
+	
+	main {
+		flex-direction: row;
+	}
+
+	header {
+		max-width: 35rem;
+	}
+
+	h1, h2 {
+		font-size: 2.5rem;
+	}
+
+	.card-icon {
+		margin-top: 3rem;
+	}
+
+	.card-text {
+		margin-top: .4rem;
+		line-height: 1.7;
+	}
+}

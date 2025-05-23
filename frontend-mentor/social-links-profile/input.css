@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@layer utilities {
+  body {
+    @apply bg-custom-offblack text-custom-white min-h-screen flex items-center justify-center font-inter
+  }
+
+  main {
+    @apply flex flex-col items-center justify-between bg-custom-darkgrey p-8 rounded-lg gap-7 w-[22rem]
+  }
+
+  main img {
+    @apply rounded-full w-24
+  }
+
+  main .name__location {
+    @apply flex flex-col items-center justify-center gap-2 font-bold
+  }
+
+  main .person-name {
+    @apply text-2xl
+  }
+
+  main .person-location {
+    @apply text-custom-green text-sm
+  }
+
+  main .person__bio {
+    @apply text-center text-sm
+  }
+
+  main ul {
+    @apply flex flex-col justify-between gap-4 w-full
+  }
+
+  main ul li a {
+    @apply block w-full bg-custom-grey p-3 rounded-lg text-center text-sm font-bold
+  }
+
+  main ul li a:hover {
+    @apply bg-custom-green text-custom-offblack
+  }
+
+  footer {
+    @apply hidden
+  }
+}
