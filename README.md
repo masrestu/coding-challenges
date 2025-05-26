@@ -3,6 +3,14 @@
 Welcome to my collection of coding challenge solutions from various platforms. This repository showcases my progress and skills in web development.
 
 ---
+## Table of contents
+
+- [Challenge Solutions](#challenge-solutions)
+  - [Frontend Mentor](#frontend-mentor)
+  - [Scrimba](#scrimba)
+- [Technologies Covered](#technologies-covered)
+- [About me](#about-me)
+- [Let's connect!](#lets-connect)
 
 ## Challenge Solutions
 
@@ -335,9 +343,22 @@ Welcome to my collection of coding challenge solutions from various platforms. T
 ### Scrimba
 
 <details>
-<summary>[Oldagram (Coming Soon!)](scrimba/your-next-scrimba-challenge-folder/)</summary>
+<summary>Choreslist</summary>
+    <ul>
+        <li><a href="https://masrestu.github.io/coding-challenges/scrimba/choreslist/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/scrimba/choreslist/">Source Code</a></li>
+        <li><a href="https://scrimba.com/s039qn6">Challenge Page</a></li>
+    </ul>
+</details>
 
----</details>
+<details>
+<summary>Oldagram</summary>
+    <ul>
+        <li><a href="https://masrestu.github.io/coding-challenges/scrimba/oldagram/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/scrimba/oldagram/">Source Code</a></li>
+        <li><a href="https://scrimba.com/s01kgac">Challenge Page</a></li>
+    </ul>
+</details>
 
 ## Technologies Covered
 
@@ -353,3 +374,7 @@ Welcome to my collection of coding challenge solutions from various platforms. T
 
 - GitHub: [@masrestu](https://github.com/masrestu)
 - Frontend Mentor: [@masrestu](https://www.frontendmentor.io/profile/masrestu)
+
+## Let's connect!
+For collaborations, partnerships, team up or other opportunities, 
+reach me at ✉️ [rizkiawanrestu@gmail.com](mailto:rizkiawanrestu@gmail.com) ☺️
