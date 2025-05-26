@@ -9,225 +9,333 @@ Welcome to my collection of coding challenge solutions from various platforms. T
 ### Frontend Mentor
 
 <details>
-<summary>* **[3-column preview card component](frontend-mentor/3-column-preview-card-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/3-column-preview-card-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/3column-preview-card-component-pH92eAR2-)
+<summary>3-column preview card component</summary>
+    <ul>
+        <li><a href="frontend-mentor/3-column-preview-card-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/3-column-preview-card-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/3column-preview-card-component-pH92eAR2-">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Advice generator app](frontend-mentor/advice-generator-app/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/advice-generator-app/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/advice-generator-app-QdUG-13db)
+<summary>Advice generator app</summary>
+    <ul>
+        <li><a href="frontend-mentor/advice-generator-app/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/advice-generator-app/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/advice-generator-app-QdUG-13db">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Age calculator app](frontend-mentor/age-calculator-app/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/age-calculator-app/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/age-calculator-app-dF9DFFpj-Q)
+<summary>Age calculator app</summary>
+    <ul>
+        <li><a href="frontend-mentor/age-calculator-app/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/age-calculator-app/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/age-calculator-app-dF9DFFpj-Q">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Agency landing page](frontend-mentor/agency-landing-page/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/agency-landing-page/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/agency-landing-page-7yVs3B6ef)
+<summary>Agency landing page</summary>
+    <ul>
+        <li><a href="frontend-mentor/agency-landing-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/agency-landing-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/agency-landing-page-7yVs3B6ef">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Article preview component](frontend-mentor/article-preview-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/article-preview-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/article-preview-component-dYBN_pYFT)
+<summary>Article preview component</summary>
+    <ul>
+        <li><a href="frontend-mentor/article-preview-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/article-preview-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/article-preview-component-dYBN_pYFT">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Base Apparel coming soon page](frontend-mentor/base-apparel-coming-soon-page/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/base-apparel-coming-soon-page/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
+<summary>Base Apparel coming soon page</summary>
+    <ul>
+        <li><a href="frontend-mentor/base-apparel-coming-soon-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/base-apparel-coming-soon-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Bento grid](frontend-mentor/bento-grid/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/bento-grid/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/bento-grid-RMydElrlOj)
+<summary>Bento grid</summary>
+    <ul>
+        <li><a href="frontend-mentor/bento-grid/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/bento-grid/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/bento-grid-RMydElrlOj">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Blog preview card](frontend-mentor/blog-preview-card/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/blog-preview-card/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/blog-preview-card-ckPaj01IcS)
+<summary>Blog preview card</summary>
+    <ul>
+        <li><a href="frontend-mentor/blog-preview-card/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/blog-preview-card/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/blog-preview-card-ckPaj01IcS">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Contact form](frontend-mentor/contact-form/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/contact-form/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/contact-form--G-hYlqKJj)
+<summary>Contact form</summary>
+    <ul>
+        <li><a href="frontend-mentor/contact-form/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/contact-form/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/contact-form--G-hYlqKJj">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Expenses chart component](frontend-mentor/expenses-chart-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/expenses-chart-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/expenses-chart-component-e7yJBUdjwt)
+<summary>Expenses chart component</summary>
+    <ul>
+        <li><a href="frontend-mentor/expenses-chart-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/expenses-chart-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/expenses-chart-component-e7yJBUdjwt">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[FAQ accordion](frontend-mentor/faq-accordion/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/faq-accordion/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/faq-accordion-wyfFdeBwBz)
+<summary>FAQ accordion</summary>
+    <ul>
+        <li><a href="frontend-mentor/faq-accordion/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/faq-accordion/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/faq-accordion-wyfFdeBwBz">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[FAQ accordion card](frontend-mentor/faq-accordion-card/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/faq-accordion-card/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/faq-accordion-card-XlyjD0Oam)
+<summary>FAQ accordion card</summary>
+    <ul>
+        <li><a href="frontend-mentor/faq-accordion-card/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/faq-accordion-card/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/faq-accordion-card-XlyjD0Oam">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Four card feature section](frontend-mentor/four-card-feature-section/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/four-card-feature-section/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/four-card-feature-section-weK1eFYK)
+<summary>Four card feature section</summary>
+    <ul>
+        <li><a href="frontend-mentor/four-card-feature-section/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/four-card-feature-section/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/four-card-feature-section-weK1eFYK">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Huddle landing page with a single introductory section](frontend-mentor/huddle-landing-page-with-a-single-introductory-section/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/huddle-landing-page-with-a-single-introductory-section/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
+<summary>Huddle landing page with a single introductory section-section/)**</summary>
+    <ul>
+        <li><a href="frontend-mentor/huddle-landing-page-with-a-single-introduct">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/huddle-landing-page-with-a-single-introductory-section/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Interactive card details form](frontend-mentor/interactive-card-details-form/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/interactive-card-details-form/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/interactive-card-details-form-XpS8cKZDWw)
+<summary>Interactive card details form</summary>
+    <ul>
+        <li><a href="frontend-mentor/interactive-card-details-form/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/interactive-card-details-form/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/interactive-card-details-form-XpS8cKZDWw">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Interactive rating component](frontend-mentor/interactive-rating-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/interactive-rating-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/interactive-rating-component-koxpeBUmI)
+<summary>Interactive rating component</summary>
+    <ul>
+        <li><a href="frontend-mentor/interactive-rating-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/interactive-rating-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/interactive-rating-component-koxpeBUmI">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Intro component with sign-up form](frontend-mentor/intro-component-with-sign-up-form/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/intro-component-with-sign-up-form/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+<summary>Intro component with sign-up form</summary>
+    <ul>
+        <li><a href="frontend-mentor/intro-component-with-sign-up-form/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/intro-component-with-sign-up-form/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Intro section with dropdown navigation](frontend-mentor/intro-section-with-dropdown-navigation/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/intro-section-with-dropdown-navigation/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/intro-section-with-dropdown-navigation-ryaPetHE5)
+<summary>Intro section with dropdown navigation</summary>
+    <ul>
+        <li><a href="frontend-mentor/intro-section-with-dropdown-navigation/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/intro-section-with-dropdown-navigation/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/intro-section-with-dropdown-navigation-ryaPetHE5">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Mortgage repayment calculator](frontend-mentor/mortgage-repayment-calculator/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/mortgage-repayment-calculator/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/mortgage-repayment-calculator-Galx1LXK73)
+<summary>Mortgage repayment calculator</summary>
+    <ul>
+        <li><a href="frontend-mentor/mortgage-repayment-calculator/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/mortgage-repayment-calculator/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/mortgage-repayment-calculator-Galx1LXK73">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[NFT preview card component](frontend-mentor/nft-preview-card-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/nft-preview-card-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/nft-preview-card-component-SbdUL_w0U)
+<summary>NFT preview card component</summary>
+    <ul>
+        <li><a href="frontend-mentor/nft-preview-card-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/nft-preview-card-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/nft-preview-card-component-SbdUL_w0U">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[News homepage](frontend-mentor/news-homepage/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/news-homepage/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/news-homepage-H6SWTa1MFl)
+<summary>News homepage</summary>
+    <ul>
+        <li><a href="frontend-mentor/news-homepage/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/news-homepage/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/news-homepage-H6SWTa1MFl">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Newsletter sign-up form with success message](frontend-mentor/newsletter-sign-up-form-with-success-message/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/newsletter-sign-up-form-with-success-message/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)
+<summary>Newsletter sign-up form with success message</summary>
+    <ul>
+        <li><a href="frontend-mentor/newsletter-sign-up-form-with-success-message/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/newsletter-sign-up-form-with-success-message/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Notifications page](frontend-mentor/notifications-page/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/notifications-page/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/notifications-page-DqK5QAmKbC)
+<summary>Notifications page</summary>
+    <ul>
+        <li><a href="frontend-mentor/notifications-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/notifications-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/notifications-page-DqK5QAmKbC">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Order summary component](frontend-mentor/order-summary-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/order-summary-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/order-summary-component-QlPmajDUj)
+<summary>Order summary component</summary>
+    <ul>
+        <li><a href="frontend-mentor/order-summary-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/order-summary-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/order-summary-component-QlPmajDUj">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Ping single column coming soon page](frontend-mentor/ping-single-column-coming-soon-page/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/ping-single-column-coming-soon-page/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)
+<summary>Ping single column coming soon page</summary>
+    <ul>
+        <li><a href="frontend-mentor/ping-single-column-coming-soon-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/ping-single-column-coming-soon-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Product list with cart](frontend-mentor/product-list-with-cart/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/product-list-with-cart/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/product-list-with-cart-5MmqLVAp_d)
+<summary>Product list with cart</summary>
+    <ul>
+        <li><a href="frontend-mentor/product-list-with-cart/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/product-list-with-cart/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/product-list-with-cart-5MmqLVAp_d">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Product preview card component](frontend-mentor/product-preview-card-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/product-preview-card-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/product-preview-card-component-GO7UmttRfa)
+<summary>Product preview card component</summary>
+    <ul>
+        <li><a href="frontend-mentor/product-preview-card-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/product-preview-card-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/product-preview-card-component-GO7UmttRfa">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Profile card component](frontend-mentor/profile-card-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/profile-card-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/profile-card-component-cfArpWshJ)
+<summary>Profile card component</summary>
+    <ul>
+        <li><a href="frontend-mentor/profile-card-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/profile-card-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/profile-card-component-cfArpWshJ">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[QR code component](frontend-mentor/qr-code-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/qr-code-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/qr-code-component-iux_sIO_H)
+<summary>QR code component</summary>
+    <ul>
+        <li><a href="frontend-mentor/qr-code-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/qr-code-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/qr-code-component-iux_sIO_H">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Recipe page](frontend-mentor/recipe-page/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/recipe-page/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/recipe-page-KiTsR8QQKm)
+<summary>Recipe page</summary>
+    <ul>
+        <li><a href="frontend-mentor/recipe-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/recipe-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/recipe-page-KiTsR8QQKm">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Single price grid component](frontend-mentor/single-price-grid-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/single-price-grid-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+<summary>Single price grid component</summary>
+    <ul>
+        <li><a href="frontend-mentor/single-price-grid-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/single-price-grid-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Social links profile](frontend-mentor/social-links-profile/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/social-links-profile/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/social-links-profile-UG32l9m6dQ)
+<summary>Social links profile</summary>
+    <ul>
+        <li><a href="frontend-mentor/social-links-profile/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/social-links-profile/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/social-links-profile-UG32l9m6dQ">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Social proof section](frontend-mentor/social-proof-section/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/social-proof-section/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/social-proof-section-6e0qTv_bA)
+<summary>Social proof section</summary>
+    <ul>
+        <li><a href="frontend-mentor/social-proof-section/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/social-proof-section/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/social-proof-section-6e0qTv_bA">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Stats preview card component](frontend-mentor/stats-preview-card-component/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/stats-preview-card-component/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/stats-preview-card-component-8JqbgoU62)
+<summary>Stats preview card component</summary>
+    <ul>
+        <li><a href="frontend-mentor/stats-preview-card-component/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/stats-preview-card-component/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/stats-preview-card-component-8JqbgoU62">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Time tracking dashboard](frontend-mentor/time-tracking-dashboard/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/time-tracking-dashboard/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/time-tracking-dashboard-UIQ7167Jw)
+<summary>Time tracking dashboard</summary>
+    <ul>
+        <li><a href="frontend-mentor/time-tracking-dashboard/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/time-tracking-dashboard/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/time-tracking-dashboard-UIQ7167Jw">Challenge Page</a></li>
+    </ul>
 </details>
 
 <details>
-<summary>* **[Tip calculator app](frontend-mentor/tip-calculator-app/)**</summary>
-    * [**Source Code**](https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/tip-calculator-app/)
-    * [**Challenge Page**](https://www.frontendmentor.io//challenges/tip-calculator-app-ugJNGbJUX)
+<summary>Tip calculator app</summary>
+    <ul>
+        <li><a href="frontend-mentor/tip-calculator-app/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/tip-calculator-app/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io//challenges/tip-calculator-app-ugJNGbJUX">Challenge Page</a></li>
+    </ul>
 </details>
 
 ### Scrimba
 
 <details>
-<summary>* **[Oldagram (Coming Soon!)](scrimba/your-next-scrimba-challenge-folder/)**</summary>
+<summary>[Oldagram (Coming Soon!)](scrimba/your-next-scrimba-challenge-folder/)</summary>
 
 ---</details>
 
