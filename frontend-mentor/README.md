@@ -354,5 +354,5 @@ Welcome to my collection of coding challenge solutions from FrontendMentor. This
 
 ## Let's connect!
 For collaborations, partnerships, team up or other opportunities, reach me at 
-✉️ Email [rizkiawanrestu@gmail.com](mailto:rizkiawanrestu@gmail.com) 
-🎮 Discord [@callme_stu](https://discord.com/users/callme_stu)
+- ✉️ Email [rizkiawanrestu@gmail.com](mailto:rizkiawanrestu@gmail.com) 
+- 🎮 Discord [@callme_stu](https://discord.com/users/callme_stu)
