@@ -2,7 +2,7 @@ const TestimonialData = {
     "testimonials": [
         {
             "colorTheme" : "purple",
-            "avatar" : "../assets/images/image-daniel.jpg",
+            "avatar" : "/images/image-daniel.jpg",
             "name" : "Daniel Clifford",
             "title" : "Verified Graduate",
             "summary" : "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
@@ -10,7 +10,7 @@ const TestimonialData = {
         },
         {
             "colorTheme" : "grey",
-            "avatar" : "../assets/images/image-jonathan.jpg",
+            "avatar" : "/images/image-jonathan.jpg",
             "name" : "Jonathan Walters",
             "title" : "Verified Graduate",
             "summary" : "The team was very supportive and kept me motivated",
@@ -18,7 +18,7 @@ const TestimonialData = {
         },
         {
             "colorTheme" : "white",
-            "avatar" : "../assets/images/image-jeanette.jpg",
+            "avatar" : "/images/image-jeanette.jpg",
             "name" : "Jeanette Harmon",
             "title" : "Verified Graduate",
             "summary" : "An overall wonderful and rewarding experience",
@@ -26,7 +26,7 @@ const TestimonialData = {
         },
         {
             "colorTheme" : "dark-blue",
-            "avatar" : "../assets/images/image-patrick.jpg",
+            "avatar" : "/images/image-patrick.jpg",
             "name" : "Patrick Abrams",
             "title" : "Verified Graduate",
             "summary" : "Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.",
@@ -34,7 +34,7 @@ const TestimonialData = {
         },
         {
             "colorTheme" : "white",
-            "avatar" : "../assets/images/image-kira.jpg",
+            "avatar" : "/images/image-kira.jpg",
             "name" : "Kira Whittle",
             "title" : "Verified Graduate",
             "summary" : "Such a life-changing experience. Highly recommended!",
