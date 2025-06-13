@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url(/src/assets/fonts/BarlowSemiCondensed-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url(/src/assets/fonts/BarlowSemiCondensed-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+  --clr-purple-50: hsl(260, 100%, 95%);
+  --clr-purple-300: hsl(264, 82%, 80%);
+  --clr-purple-500: hsl(263, 55%, 52%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  
+  --clr-grey-100: hsl(214, 17%, 92%);
+  --clr-grey-200: hsl(0, 0%, 81%);
+  --clr-grey-400: hsl(224, 10%, 45%);
+  --clr-grey-500: hsl(217, 19%, 35%);
+  
+  --clr-dark-blue: hsl(219, 29%, 14%);
+  --clr-black: hsl(0, 0%, 7%);
+
+  --display-font: "Barlow Semi Condensed", sans-serif;
+
+  --spacing-400: 2rem;
+  --spacing-300: 1rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-grey-100);
+    color: var(--clr-black);
+    font-family: var(--display-font);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1ch;
+  height: 1ch;
+  padding: 0;
+  margin: -1ch;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

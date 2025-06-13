@@ -1,0 +1,24 @@
+.testimonials-grid {
+  margin: 4.5em var(--spacing-400);
+  display: grid;
+  row-gap: var(--spacing-400);
+  column-gap: var(--spacing-400);
+}
+
+@media (min-width: 48em) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 76em) {
+  .testimonials-grid {
+    max-width: 71em;
+  }
+}
