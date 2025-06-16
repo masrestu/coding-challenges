@@ -8,7 +8,6 @@ function App() {
     const testimonials = TestimonialData.testimonials.map(testimonial => (
         <TestimonialCard data={testimonial} />
     ))
-    console.log(TestimonialData)
 
     return (
         <>
