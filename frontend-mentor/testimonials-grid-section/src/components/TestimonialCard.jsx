@@ -1,7 +1,6 @@
 import styles from "./TestimonialCard.module.css"
 
 export default function TestimonialCard({ data }) {
-    console.log(styles)
     return (
         <div className={`${styles['testimonial-card']} ${styles[data.colorTheme]}`}>
             <div className={styles['testimonial-header']}>
