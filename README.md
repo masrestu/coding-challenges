@@ -334,7 +334,7 @@ Welcome to my collection of coding challenge solutions from various platforms. T
 <details>
 <summary>Testimonials grid section</summary>
     <ul>
-        <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/testimonials-grid-section/">Live Preview</a></li>
+        <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/testimonials-grid-section/dist">Live Preview</a></li>
         <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/testimonials-grid-section/">Source Code</a></li>
         <li><a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">Challenge Page</a></li>
     </ul>
