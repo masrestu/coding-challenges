@@ -43,7 +43,7 @@
 }
 
 body {
-    background-color: var(--clr-grey-100);
+    background-color: var(--clr-white);
     color: var(--clr-black);
     font-family: var(--display-font);
     min-height: 100vh;

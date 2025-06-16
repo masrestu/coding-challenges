@@ -1,19 +1,20 @@
-import "./TestimonialCard.css"
+import styles from "./TestimonialCard.module.css"
 
 export default function TestimonialCard({ data }) {
+    console.log(styles)
     return (
-        <div className={`testimonial-card ${data.colorTheme}`}>
-            <div className="testimonial-header">
-                <img src={data.avatar} alt="" className="person-image" />
-                <div className="person-info">
-                    <h3 className="person-name">{data.name}</h3>
-                    <p className="person-title">{data.title}</p>
+        <div className={`${styles['testimonial-card']} ${styles[data.colorTheme]}`}>
+            <div className={styles['testimonial-header']}>
+                <img src={data.avatar} alt="" className={styles['person-image']} />
+                <div className={styles['person-info']}>
+                    <h3 className={styles['person-name']}>{data.name}</h3>
+                    <p className={styles['person-title']}>{data.title}</p>
                 </div>
             </div>
-            <p className="testimonial-summary">
+            <p className={styles['testimonial-summary']}>
                 <strong>{data.summary}</strong>
             </p>
-            <p className="testimonial-detail">
+            <p className={styles['testimonial-detail']}>
                 {data.details}
             </p>
         </div>

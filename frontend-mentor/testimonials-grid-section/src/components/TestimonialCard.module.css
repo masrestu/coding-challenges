@@ -95,7 +95,7 @@
     }
 
     .testimonial-card:first-of-type{
-        background-image: url(./images/bg-pattern-quotation.svg);
+        background-image: url(/images/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
         background-position-x: calc(100% - 4.5em);
         background-size: 8em;
