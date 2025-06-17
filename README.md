@@ -179,6 +179,15 @@ Welcome to my collection of coding challenge solutions from various platforms. T
 </details>
 
 <details>
+<summary>Meet landing page</summary>
+    <ul>
+        <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/meet-landing-page/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/meet-landing-page/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR">Challenge Page</a></li>
+    </ul>
+</details>
+
+<details>
 <summary>Mortgage repayment calculator</summary>
     <ul>
         <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/mortgage-repayment-calculator/">Live Preview</a></li>
