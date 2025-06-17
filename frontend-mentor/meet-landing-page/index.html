@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <title>Frontend Mentor | Meet landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-display max-w-[100vw] w-screen bg-white grid place-items-center overflow-x-hidden">
+    <header>
+        <nav class="mt-12 mx-auto size-fit">
+            <a href=".">
+                <img src="./assets/logo.svg" alt="Meet Logo" class="w-[7.375rem]">
+            </a>
+        </nav>
+    </header>
+    <main class="w-screen overflow-x-hidden">
+        <section class="hero pt-[17rem] pb-8 md:pt-[27.4375rem] md:pb-16 px-8 grid gap-y-12 md:gap-y-[4.5rem] lg:pt-16 transition-all ease-in-out place-items-center lg:max-w-[70rem] lg:mx-auto relative">
+            <picture class="absolute md:h-[18.9375rem] left-1/2 -translate-x-1/2 top-16 lg:left-0">
+                <source media="(min-width: 64rem)" srcset="./assets/desktop/image-hero-left.png">
+                <img src="./assets/tablet/image-hero.png" alt="" class="max-w-none h-full w-[27.0625rem] md:w-[51.25rem] lg:w-[24.625rem] transition-all ease-in-out">
+            </picture>
+            <picture class="absolute md:h-[18.9375rem] translate-x-1/2 bottom-16 hidden lg:block lg:right-0">
+                <source media="(min-width: 64rem)" srcset="./assets/desktop/image-hero-right.png">
+                <img src="./assets/tablet/image-hero.png" alt="" class="max-w-none h-full w-[27.0625rem] md:w-[51.25rem] lg:w-[24.625rem] transition-all ease-in-out">
+            </picture>
+            <div class="hero-text grid gap-y-6 text-center max-w-md place-items-center lg:h-[22.5rem] lg:flex lg:flex-col lg:gap-8 lg:items-center lg:justify-center">
+                <h1 class="text-[2.5rem] md:text-5xl font-black leading-[1.1] text-slate-900 text-stroke-1 md:text-stroke-none lg:max-w-md lg:text-[4rem]">Group Chat<br />for Everyone</h1>
+                <p class="font-medium text-slate-600 lg:text-lg lg:max-w-md ;g
+                px-1">
+                    Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+                </p>
+                <div class="cta grid gap-y-4 place-items-center md:flex gap-[1.0625rem]">
+                    <button type="button" class="cursor-pointer whitespace-nowrap bg-cyan-600 text-white size-fit py-4 px-10 rounded-[1.875rem] font-black hover:bg-cyan-400 transition-colors ease-in-out">
+                        Download
+                        <span class="text-cyan-300">v1.3</span>
+                    </button>
+                    <button type="button" class="cursor-pointer whitespace-nowrap bg-purple-600 text-white size-fit py-4 px-10 rounded-[1.875rem] font-black hover:bg-purple-400 hover:text-white transition-colors ease-in-out">What is it?</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content px-8 pt-[14.5rem] md:pt-64 pb-16 lg:pb-[4.5rem] grid gap-y-16 relative lg:max-w-6xl lg:mx-auto">
+            <div class="image-collage grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-x-4 gap-y-4 md:gap-x-6 lg:gap-x-8">
+                <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="Woman in videocall" class="rounded-lg" />
+                <img src="./assets/desktop/image-women-videochatting.jpg" alt="Woman in videochatting" class="rounded-lg" />
+                <img src="./assets/desktop/image-men-in-meeting.jpg" alt="Men in meeting" class="rounded-lg" />
+                <img src="./assets/desktop/image-man-texting.jpg" alt="Man texting" class="rounded-lg" />
+            </div>
+            <div class="text-content text-center grid gap-y-8">
+                <div class="title grid gap-y-4 place-items-center">
+                    <small class="uppercase text-cyan-600 tracking-wide font-black text-xs md:text-sm lg:text-base">Built for modern use</small>
+                    <h2 class="font-black text-4xl md:text-[2.25rem] lg:text-[2.5rem] max-w-[27.8125rem]">Smarter meetings, all in one place</h2>
+                </div>
+                <p class="font-medium text-slate-600 max-w-[34rem] mx-auto lg:text-lg">
+                    Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.
+                </p>
+            </div>
+            <div class="section-number absolute top-8 md:top-14 left-1/2 -translate-x-1/2">
+                <div class="h-20 w-0.25 bg-slate-300 mx-auto"></div>
+                <div class="size-[3.5rem] border-slate-300 border-1 rounded-full mx-auto flex items-center justify-center text-slate-600 font-black bg-white">01</div>
+            </div>
+        </section>
+
+        <section class="main-content pt-[6.75rem] relative">
+            <div class="text-content bg-[url(assets/mobile/image-footer.jpg)] bg-no-repeat bg-center bg-cover">
+                <div class="text-container max-w-[31.5rem] lg:max-w-6xl lg:px-8 text-center grid place-items-center gap-y-6 py-16 lg:py-28 mx-auto lg:grid-cols-[4fr_3fr_2fr] lg:place-items-start lg:text-start">
+                    <h2 class="font-black text-4xl md:text-[2.25rem] text-white lg:max-w-[27.8125rem] lg:text-[2.5rem]">Experience more together</h2>
+                    <p class="font-medium text-white lg:max-w-[22.1875rem] lg:text-lg">
+                        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+                    </p>
+                    <button type="button" class="cursor-pointer whitespace-nowrap bg-purple-600 text-white size-fit py-4 px-10 rounded-[1.875rem] font-black lg:justify-self-end hover:bg-purple-400 hover:text-white transition-colors ease-in-out">
+                        Download
+                        <span class="text-purple-300">v1.3</span>
+                    </button>
+                </div>
+            </div>
+            <div class="section-number absolute top-0 left-1/2 -translate-x-1/2">
+                <div class="h-20 w-0.25 bg-slate-300 mx-auto"></div>
+                <div class="size-[3.5rem] border-slate-300 border-1 rounded-full mx-auto flex items-center justify-center text-slate-600 font-black -mb-6 bg-white">02</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

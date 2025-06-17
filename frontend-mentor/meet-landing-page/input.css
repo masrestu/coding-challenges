@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("./assets/fonts/RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-display: swap;
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Red Hat Display", "sans-serif";
+  --color-cyan-600: #4d96a9;
+  --color-cyan-400: #71c0d4;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-400: #b18bdd;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+  --color-white: #fafafa;
+  --tracking-wide: 0.25rem;
+  --text-4xl: 2rem;
+}
+
+@utility text-stroke-1 {
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: #000;
+}
+
+@utility text-stroke-none {
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: currentColor;
+}
