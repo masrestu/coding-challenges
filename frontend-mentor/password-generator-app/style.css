@@ -226,14 +226,8 @@
   .static {
     position: static;
   }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
   .top-4 {
     top: calc(var(--spacing) * 4);
-  }
-  .top-8 {
-    top: calc(var(--spacing) * 8);
   }
   .right-200 {
     right: var(--spacing-200);
@@ -293,9 +287,6 @@
   .h-400 {
     height: var(--spacing-400);
   }
-  .h-550 {
-    height: var(--spacing-550);
-  }
   .h-700 {
     height: var(--spacing-700);
   }
@@ -325,10 +316,6 @@
   }
   .-translate-y-40 {
     --tw-translate-y: calc(var(--spacing) * -40);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-40 {
-    --tw-translate-y: calc(var(--spacing) * 40);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .cursor-default {
@@ -457,9 +444,6 @@
   }
   .py-200 {
     padding-block: var(--spacing-200);
-  }
-  .py-300 {
-    padding-block: var(--spacing-300);
   }
   .ps-4 {
     padding-inline-start: calc(var(--spacing) * 4);
@@ -701,6 +685,11 @@
   .md\:px-400 {
     @media (width >= 48rem) {
       padding-inline: var(--spacing-400);
+    }
+  }
+  .md\:py-6 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 6);
     }
   }
   .md\:text-2xl {
