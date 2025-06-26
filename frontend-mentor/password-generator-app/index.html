@@ -30,13 +30,13 @@
                 </div>
 
                 <div class="grid gap-y-400 bg-grey-800 p-200 md:px-400 transition-all duration-150 md:py-6">
-                    <form class="grid gap-y-2 md:gap-y-4 transition-all duration-150" oninput="char_length_value.value = char_length.value">
+                    <div class="grid gap-y-2 md:gap-y-4 transition-all duration-150">
                         <div class="flex justify-between items-center h-400 md:h-550 transition-all duration-150">
                             <label for="char_length" class="md:text-lg transition-all duration-150">Character Length</label>
-                            <output class="text-green-200 text-2xl transition-all duration-150 md:text-3xl" name="char_length_value" id="char_length_value"></output>
+                            <span class="text-green-200 text-2xl transition-all duration-150 md:text-3xl" name="char_length_value" id="char_length_value"></span>
                         </div>
                         <input type="range" name="char_length" id="char_length" value="0" min="0" max="20" class="cursor-pointer appearance-none h-7 focus:outline-hidden transition-colors duration-150" step="1" tabindex="0" />
-                    </form>
+                    </div>
 
                     <ul class="grid gap-y-200" id="character_type">
                         <li>

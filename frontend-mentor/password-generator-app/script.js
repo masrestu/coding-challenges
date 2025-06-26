@@ -6,6 +6,7 @@ const sliderTotal = sliderMax - sliderMin + 1
 
 function updateSliderTrack(sliderValue) {
     let sliderPercentage = sliderValue * 100 / sliderTotal
+    document.getElementById("char_length_value").innerText = sliderValue
     document.documentElement.style.setProperty("--char-length-pct", `${sliderPercentage}%`)
 }
 
