@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+    font-display: swap;
+    font-weight: 100 800;
+}
+
+@import "tailwindcss";
+
+@theme {
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-grey-200: #e6e5ea;
+    --color-grey-600: #817d92;
+    --color-grey-700: #54535b;
+    --color-grey-800: #24232c;
+    --color-grey-850: #18171f;
+    --color-grey-900: #14131b;
+    --color-grey-950: #08070b;
+
+    --color-green-200: #a4ffaf;
+
+    --color-yellow-300: #f8cd65;
+
+    --color-orange-400: #fb7c58;
+    
+    --color-red-500: #f64a4a;
+
+    --text-3xl: 2rem;
+
+    --spacing-100: .5rem;
+    --spacing-200: 1rem;
+    --spacing-250: 1.0625rem;
+    --spacing-300: 1.5rem;
+    --spacing-350: 1.75rem;
+    --spacing-400: 2rem;
+    --spacing-550: 2.625rem;
+    --spacing-700: 3.5rem;
+    --spacing-800: 4.0625rem;
+    --spacing-900: 4.5rem;
+    --spacing-1000: 5rem;
+    --spacing-1300: 6.5rem;
+    --spacing-1600: 8rem;
+    --spacing-2000: 10rem;
+    --spacing-2200: 11rem;
+    --spacing-2300: 11.5rem;
+
+    --font-display: "JetBrains Mono", sans-serif;
+
+    --char-length-pct: 50%;
+
+    --slider-track-color: to right, var(--color-green-200) var(--char-length-pct), var(--color-grey-850) var(--char-length-pct);
+
+    --indicator-fill-1: transparent;
+    --indicator-fill-2: transparent;
+    --indicator-fill-3: transparent;
+    --indicator-fill-4: transparent;
+    --indicator-stroke-1: var(--color-grey-200);
+    --indicator-stroke-2: var(--color-grey-200);
+    --indicator-stroke-3: var(--color-grey-200);
+    --indicator-stroke-4: var(--color-grey-200);
+
+    --copy-btn-gradient: to right, transparent 0%, var(--color-grey-800) 20%;
+
+    --body-gradient: to right, var(--color-gray-900), var(--color-grey-950);
+}
+
+input[type="checkbox"]:checked + div > svg {
+    @apply block
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    @apply h-2 bg-linear-(--slider-track-color)
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    @apply size-7 -mt-2.5 bg-grey-200 appearance-none rounded-full focus:border-2 focus:border-green-200
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    @apply bg-grey-850 border-2 border-green-200
+}
