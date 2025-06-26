@@ -102,14 +102,14 @@ function checkPasswordStrength(passLength, terms) {
     }
 }
 
+function delay(delayInms) {
+    return new Promise(resolve => setTimeout(resolve, delayInms))
+}
+
 async function renderPassword(password) {
     const display = document.getElementById("generated_pwd")
     display.value = ''
     const characters = [...password]
-
-    const delay = (delayInms) => {
-        return new Promise(resolve => setTimeout(resolve, delayInms));
-    };
 
     let character
     while (character = characters.shift()) {
@@ -140,6 +140,7 @@ btnGenerate.addEventListener("click", async function () {
     const terms = document.getElementsByName("contains")
 
     clearError()
+    delay(150)
     if (passLength === 0) {
         displayError("Character length must not be zero")
         return false

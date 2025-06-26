@@ -40,46 +40,46 @@
 
                     <ul class="grid gap-y-200" id="character_type">
                         <li>
-                            <label for="inc_upper" tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg/snug transition-all duration-150">
+                            <label tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg/snug transition-all duration-150">
                                 <input type="checkbox" name="contains" id="inc_upper" class="peer hidden" />
-                                <div class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
+                                <span class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
                                     <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg" class="hidden">
                                         <path stroke="#18171F" fill="none" stroke-width="3" d="M1 5.607 4.393 9l8-8" />
                                     </svg>
-                                </div>
+                                </sp>
                                 <span>Include Uppercase Letters</span>
                             </label>
                         </li>
                         <li>
-                            <label for="inc_lower" tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
+                            <label tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
                                 <input type="checkbox" name="contains" id="inc_lower" class="peer hidden" />
-                                <div class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
+                                <span class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
                                     <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg" class="hidden">
                                         <path stroke="#18171F" fill="none" stroke-width="3" d="M1 5.607 4.393 9l8-8" />
                                     </svg>
-                                </div>
+                                </sp>
                                 <span>Include Lowercase Letters</span>
                             </label>
                         </li>
                         <li>
-                            <label for="inc_numbers" tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
+                            <label tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
                                 <input type="checkbox" name="contains" id="inc_numbers" class="peer hidden" />
-                                <div class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
+                                <span class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
                                     <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg" class="hidden">
                                         <path stroke="#18171F" fill="none" stroke-width="3" d="M1 5.607 4.393 9l8-8" />
                                     </svg>
-                                </div>
+                                </sp>
                                 <span>Include Numbers</span>
                             </label>
                         </li>
                         <li>
-                            <label for="inc_symbols" tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
+                            <label tabindex="0" class="cursor-pointer flex items-center gap-200 group text-base/tight md:text-lg transition-all duration-150">
                                 <input type="checkbox" name="contains" id="inc_symbols" class="peer hidden" />
-                                <div class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
+                                <span class="border-grey-200 group flex size-5 items-center justify-center border-2 peer-checked:border-green-200 peer-checked:bg-green-200 group-hover:border-green-200">
                                     <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg" class="hidden">
                                         <path stroke="#18171F" fill="none" stroke-width="3" d="M1 5.607 4.393 9l8-8" />
                                     </svg>
-                                </div>
+                                </sp>
                                 <span>Include Symbols</span>
                             </label>
                         </li>
@@ -109,9 +109,9 @@
         </main>
     </div>
 
-    <div id="error_message" class="container max-w-[33.75rem] mx-auto bg-red-500 p-200 fixed top-4 -translate-y-40 peer-[.invalid]:translate-y-0 transition-all duration-150">
+    <aside id="error_message" class="container max-w-[33.75rem] mx-auto bg-red-500 p-200 fixed top-4 -translate-y-40 peer-[.invalid]:translate-y-0 transition-all duration-150">
         Select at least one character type
-    </div>
+    </aside>
 </body>
 
 </html>
