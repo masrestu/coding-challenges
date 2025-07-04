@@ -10,7 +10,7 @@ export default defineConfig({
         tailwindcss()
     ],
     build: {
-        outDir: path.resolve('../dist'),
+        outDir: path.resolve('../preview'),
         emptyOutDir: true,
     },
     base: './'
