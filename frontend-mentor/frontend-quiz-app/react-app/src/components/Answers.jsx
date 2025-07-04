@@ -33,14 +33,14 @@ export default function Answers(props) {
         if (isChecked) {
             if (isCorrect && (choice === selectedAnswer)) {
                 answerClass = 'correct'
-                indicatorElement = <img src={getImgUrl(`/src/assets/images/icon-correct.svg`)} alt="" className="ms-auto" />
+                indicatorElement = <img src={getImgUrl(`/images/icon-correct.svg`)} alt="" className="ms-auto" />
             } else if (!isCorrect) {
                 if (choice === selectedAnswer) {
                     answerClass = 'incorrect'
-                    indicatorElement = <img src={getImgUrl(`/src/assets/images/icon-error.svg`)} alt="" className="ms-auto" />
+                    indicatorElement = <img src={getImgUrl(`/images/icon-error.svg`)} alt="" className="ms-auto" />
                 } else if (choice === correctAnswer) {
                     answerClass = 'correct'
-                    indicatorElement = <img src={getImgUrl(`/src/assets/images/icon-correct.svg`)} alt="" className="ms-auto" />
+                    indicatorElement = <img src={getImgUrl(`/images/icon-correct.svg`)} alt="" className="ms-auto" />
                 }
             }
         }
@@ -87,7 +87,7 @@ export default function Answers(props) {
             {
                 isSubmitted && !selectedAnswer ?
                     <div className="unanswered flex items-center justify-center text-red-500 gap-2 sm-text-preset-4-medium dark:text-white">
-                        <img src={getImgUrl(`/src/assets/images/icon-error.svg`)} alt="" />
+                        <img src={getImgUrl(`/images/icon-error.svg`)} alt="" />
                         <span>Please select an answer</span>
                     </div> :
                     null

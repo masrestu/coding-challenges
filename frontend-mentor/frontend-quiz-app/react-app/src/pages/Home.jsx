@@ -12,7 +12,7 @@ export default function Home() {
     useEffect(() => {
         if (!globalQuizData) {
             async function fetchData() {
-                await fetch('/data.json')
+                await fetch('data.json')
                     .then(response => response.json())
                     .then(data => setGlobalQuizData(data.quizzes))
             }
@@ -24,7 +24,7 @@ export default function Home() {
     const categoryLinks = globalQuizData ? globalQuizData.map(quiz => (
         <Link to={quiz.title} className='option-item group' key={quiz.title}>
             <div className={`option-icon-container ${'color-scheme-' + quiz.title.toLowerCase()}`}>
-                <img src={getImgUrl(`/src/${quiz.icon}`)} alt='' className='size-2/3' />
+                <img src={getImgUrl(quiz.icon)} alt='' className='size-2/3' />
             </div>
             <span className='option-text'>{quiz.title}</span>
         </Link>

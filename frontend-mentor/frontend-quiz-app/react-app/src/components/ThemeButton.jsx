@@ -1,7 +1,7 @@
-import iconSunDark from '../assets/images/icon-sun-dark.svg'
-import iconMoonDark from '../assets/images/icon-moon-dark.svg'
-import iconSunLight from '../assets/images/icon-sun-light.svg'
-import iconMoonLight from '../assets/images/icon-moon-light.svg'
+import iconSunDark from '/images/icon-sun-dark.svg'
+import iconMoonDark from '/images/icon-moon-dark.svg'
+import iconSunLight from '/images/icon-sun-light.svg'
+import iconMoonLight from '/images/icon-moon-light.svg'
 import { memo } from 'react'
 
 function ThemeButton() {
