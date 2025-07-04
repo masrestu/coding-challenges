@@ -13,5 +13,5 @@ export default defineConfig({
         outDir: path.resolve('../preview'),
         emptyOutDir: true,
     },
-    base: 'https://masrestu.github.io/coding-challenges/frontend-mentor/frontend-quiz-app/preview/'
+    base: 'coding-challenges/frontend-mentor/frontend-quiz-app/preview/'
 })
