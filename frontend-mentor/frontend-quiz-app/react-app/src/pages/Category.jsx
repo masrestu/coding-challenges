@@ -29,9 +29,22 @@ export default function Category() {
         }
     }, [params.category])
 
+    function shuffleArray(array) {
+        const shuffled = array.slice();
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
     const updateQuizStates = (data) => {
         const categoryDetail = data.find(quizByCategory)
-        setQuestionList(categoryDetail.questions)
+        setQuestionList(shuffleArray(
+            categoryDetail.questions.map(value => {
+                return {...value, options: shuffleArray(value.options)}
+            })
+        ))
         setCategory({
             title: categoryDetail.title,
             icon: categoryDetail.icon,

@@ -11,7 +11,6 @@ export default defineConfig({
     ],
     build: {
         outDir: path.resolve('../preview'),
-        emptyOutDir: true,
+        emptyOutDir: false,
     },
-    base: 'coding-challenges/frontend-mentor/frontend-quiz-app/preview/'
 })

@@ -11,27 +11,29 @@ export default function Score() {
         if (category === null) navigate('/')
     }, [category, navigate])
 
-    return <>
-        <div className='content-header'>
-            <h1 className='title-container grid place-items-start gap-2'>
-                <span className='sm-text-preset-2-light'>
-                    Quiz completed
-                </span>
-                <span className='sm-text-preset-2-medium'>
-                    You scored...
-                </span>
-            </h1>
-        </div>
-        <div className='content-body'>
-            <div className="score-card grid p-8 gap-4 rounded-xl bg-white place-items-center text-center dark:bg-(--color-blue-850)">
-                <CategoryLogo {...category} />
-                <div className='score-detail grid gap-4'>
-                    <h2 className='sm-text-preset-1-medium'>{quizScore.current}</h2>
-                    <h3 className='sm-text-preset-4-medium text-gray-500 dark:text-blue-300'>out of {category.totalQuestions}</h3>
-                </div>
+    return category ?
+        <>
+            <div className='content-header'>
+                <h1 className='title-container grid place-items-start gap-2'>
+                    <span className='title-1'>
+                        Quiz completed
+                    </span>
+                    <span className='title-2'>
+                        You scored...
+                    </span>
+                </h1>
             </div>
-            {/* {categoryLinks} */}
-            <Link to='/' className='btn-primary'>Play Again</Link>
-        </div>
-    </>
+            <div className='content-body'>
+                <div className="score-card">
+                    <CategoryLogo {...category} />
+                    <div className='score-detail'>
+                        <h2 className='score-correct'>{quizScore.current}</h2>
+                        <h3 className='score-total'>out of {category.totalQuestions}</h3>
+                    </div>
+                </div>
+                {/* {categoryLinks} */}
+                <Link to='/' className='btn-primary md:mt-4'>Play Again</Link>
+            </div>
+        </> :
+        null
 }

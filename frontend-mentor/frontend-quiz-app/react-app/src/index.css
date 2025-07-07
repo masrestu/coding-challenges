@@ -50,7 +50,7 @@
   --color-red-500: #ee5454;
 
   --text-3xl: 1.75rem;
-  --text-4xl: 2.5rem;
+  --text-4xl: 2.25rem;
   --text-6xl: 4rem;
   --text-7xl: 5.5rem;
   --leading-tight: 1.2;
@@ -68,13 +68,17 @@
   --spacing-1800: 9rem;
   --spacing-2300: 11.5rem;
 
-  --progress-completed: 10%;
+  --progress-completed: 100%;
 
   --options-selected-padding: 0.8125rem;
+  
+  --option-border-width: 0.1875rem;
+  --option-padding: calc(1rem - var(--option-border-width));
+  --option-padding-desktop: calc(1.5rem - var(--option-border-width));
 }
 
 body {
-  @apply text-blue-900 bg-gray-50 bg-[url(/images/pattern-background-mobile-light.svg)] bg-no-repeat bg-cover dark:bg-blue-900 dark:bg-[url(/images/pattern-background-mobile-dark.svg)] dark:text-white min-h-lvh;
+  @apply text-blue-900 bg-gray-50 bg-[url(/images/pattern-background-mobile-light.svg)] md:bg-[url(/images/pattern-background-tablet-light.svg)] lg:bg-[url(/images/pattern-background-desktop-light.svg)] bg-no-repeat bg-cover dark:bg-blue-900 dark:bg-[url(/images/pattern-background-mobile-dark.svg)] dark:md:bg-[url(/images/pattern-background-tablet-dark.svg)] dark:lg:bg-[url(/images/pattern-background-desktop-dark.svg)] dark:text-white min-h-lvh lg:mx-4 md:bg-auto lg:bg-cover;
 }
 
 .color-scheme-html {
@@ -151,45 +155,65 @@ body {
 
 @layer base {
   header {
-    @apply px-5 py-4 h-18 w-full flex items-center justify-between;
+    @apply px-6 py-4 h-18 w-full flex items-center justify-between transition-all duration-150 md:pt-10 md:h-auto lg:h-56 lg:p-0;
   }
 
   main {
-    @apply px-5 py-8 grid gap-10;
+    @apply px-6 py-8 grid gap-y-10 md:gap-y-16 lg:grid-cols-[5fr_6fr] lg:gap-x-32 lg:py-0 lg:px-0;
   }
 }
 
 @layer components {
   .logo {
-    @apply rounded-xl flex gap-4 items-center sm-text-preset-4-medium;
+    @apply rounded-xl flex gap-4 items-center sm-text-preset-4-medium transition-all duration-150 md:h-14 md:text-preset-4-medium;
   }
 
   .btn-theme {
-    @apply w-20 h-5 flex justify-between items-center;
+    @apply w-20 h-5 flex justify-between items-center transition-all md:w-32 md:h-7;
+  }
+
+  .icon-theme {
+    @apply size-4 transition-all md:size-6;
+  }
+
+  .icon-dark {
+    @apply hidden dark:block;
+  }
+
+  .icon-light {
+    @apply block dark:hidden;
   }
 
   .toggle {
-    @apply h-full w-8 bg-purple-600 rounded-full flex p-1 dark:ps-4 transition-all;
+    @apply h-full w-8 bg-purple-600 rounded-full flex p-1 transition-all md:w-12;
   }
 
   .toggle-thumb {
-    @apply rounded-full size-3 bg-white;
+    @apply rounded-full size-3 bg-white md:size-5 transition-all dark:ms-auto;
   }
 
-  .content-header {
-    @apply grid place-items-start gap-y-4;
+  .title-1 {
+    @apply sm-text-preset-2-light md:text-preset-2-light transition-all;
   }
 
-  .question-text {
-    @apply sm-text-preset-3-medium text-start;
+  .title-2 {
+    @apply sm-text-preset-2-medium md:text-preset-2-medium transition-all;
   }
 
   .description {
-    @apply sm-text-preset-5-italic text-gray-500 dark:text-blue-300;
+    @apply sm-text-preset-5-italic text-gray-500 dark:text-blue-300 md:text-preset-6-italic transition-all;
+  }
+
+  .content-header {
+    @apply grid place-items-start gap-y-4 md:gap-y-6 transition-all lg:flex lg:flex-col lg:justify-start lg:gap-6 lg:h-118;
+  }
+
+  .question-text {
+    @apply sm-text-preset-3-medium text-start md:text-preset-3-medium transition-all;
   }
 
   .progress-bar {
-    @apply rounded-full mt-2 w-full h-4 p-1 bg-white dark:bg-(--color-blue-850);
+    @apply rounded-full mt-2 w-full h-4 p-1 bg-white dark:bg-(--color-blue-850) md:mt-4 transition-all lg:mt-auto;
   }
 
   .progress-bar-completed {
@@ -197,22 +221,38 @@ body {
   }
 
   .content-body {
-    @apply grid gap-y-4;
+    @apply grid gap-y-4 md:gap-y-6 transition-all lg:gap-y-4;
   }
 
   .option-item {
-    @apply h-18 bg-white rounded-xl flex gap-4 items-center sm-text-preset-4-medium dark:bg-(--color-blue-850) border-3 border-transparent hover:border-purple-600 p-(--options-selected-padding) cursor-pointer active:border-purple-600 has-disabled:border-transparent has-disabled:cursor-default has-disabled:has-checked:border-3 has-checked:border-purple-600 has-checked:[&.correct]:border-green-500 has-checked:[&.incorrect]:border-red-500;
+    @apply h-18 bg-white rounded-xl md:rounded-3xl flex gap-4 items-center sm-text-preset-4-medium dark:bg-(--color-blue-850) border-(length:--option-border-width) border-transparent hover:border-purple-600 p-(--option-padding) cursor-pointer active:border-purple-600 has-disabled:border-transparent has-disabled:cursor-default has-disabled:has-checked:border-(length:--option-border-width) has-checked:border-purple-600 has-checked:[&.correct]:border-green-500 has-checked:[&.incorrect]:border-red-500 transition-all md:h-auto md:gap-8 md:text-preset-4-medium lg:p-(--option-padding-desktop);
   }
 
   .option-icon-container {
-    @apply size-10 rounded-md flex items-center justify-center shrink-0;
+    @apply size-10 rounded-md flex items-center justify-center shrink-0 transition-all duration-150 md:size-14 md:rounded-xl;
   }
 
   .btn-primary {
-    @apply bg-purple-600 h-14 flex items-center justify-center text-white rounded-xl sm-text-preset-4-medium cursor-pointer;
+    @apply bg-purple-600 h-14 flex items-center justify-center text-white rounded-xl sm-text-preset-4-medium cursor-pointer md:text-preset-4-medium transition-all md:h-23 md:rounded-3xl md:mt-2;
   }
 
   .option-answer {
     @apply bg-gray-50 text-gray-500 peer-checked:bg-purple-600 peer-checked:text-white group-hover:bg-purple-600 group-hover:text-white group-hover:peer-disabled:bg-gray-50 group-hover:peer-disabled:text-gray-500 group-hover:peer-checked:peer-disabled:bg-purple-600 group-hover:peer-checked:peer-disabled:text-white peer-checked:group-[&.correct]:!bg-green-500 peer-checked:group-[&.incorrect]:!bg-red-500;
+  }
+
+  .score-card {
+    @apply grid p-8 gap-y-4 rounded-xl bg-white place-items-center text-center dark:bg-(--color-blue-850) md:rounded-3xl md:p-12 md:gap-y-10;
+  }
+
+  .score-detail {
+    @apply grid gap-y-4 md:gap-y-8;
+  }
+
+  .score-correct {
+    @apply sm-text-preset-1-medium md:text-preset-1-medium;
+  }
+
+  .score-total {
+    @apply sm-text-preset-4-medium text-gray-500 dark:text-blue-300 md:text-preset-5-regular;
   }
 }

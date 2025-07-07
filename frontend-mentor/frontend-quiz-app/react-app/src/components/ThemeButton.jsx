@@ -15,8 +15,8 @@ function ThemeButton() {
 
     return <div className='btn-theme ms-auto'>
         <picture>
-            <img className='size-4 hidden dark:block' src={iconSunLight} alt='' />
-            <img className='size-4 block dark:hidden' src={iconSunDark} alt='' />
+            <img className='icon-theme icon-dark' src={iconSunLight} alt='' />
+            <img className='icon-theme icon-light' src={iconSunDark} alt='' />
         </picture>
         <label className='cursor-pointer'>
             <input type='checkbox' name='btnTheme' id='btnTheme' className='hidden' onChange={toggleDarkMode} />
@@ -26,8 +26,8 @@ function ThemeButton() {
             <span className="sr-only">Toggle Dark Mode</span>
         </label>
         <picture>
-            <img className='size-4 hidden dark:block' src={iconMoonLight} alt='' />
-            <img className='size-4 block dark:hidden' src={iconMoonDark} alt='' />
+            <img className='icon-theme icon-dark' src={iconMoonLight} alt='' />
+            <img className='icon-theme icon-light' src={iconMoonDark} alt='' />
         </picture>
     </div>
 }
