@@ -129,7 +129,7 @@ Welcome to my collection of coding challenge solutions from various platforms. T
     <ul>
         <li><a href="https://frontend-quiz-app-henna.vercel.app/">Live Preview</a></li>
         <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/frontend-quiz-app/">Source Code</a></li>
-        <li><a href="https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU">Challenge Page</a></li>
+        <li><a href="https://www.frontendmentor.io/solutions/frontend-quiz-app-TRirTlqYEp">Challenge Page</a></li>
     </ul>
 </details>
 
