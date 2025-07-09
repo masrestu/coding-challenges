@@ -56,7 +56,7 @@ img {
 
 .rounded-shape {
 	background-color: var(--neutral-4);
-	border-radius: 4rem;
+	border-radius: 50%;
 	padding: .85rem;
 	width: 45px;
 	height: auto;
@@ -84,13 +84,14 @@ p {
 	width: 100%;
 }
 
-.ratings > div {
+.ratings > button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    border: none;
 }
 
-button {
+button#submit {
 	background-color: var(--orange);
 	color: var(--neutral-1);
 	border: none;
@@ -101,20 +102,22 @@ button {
 	border-radius: 2rem;
 }
 
-.ratings > div:hover {
+.ratings > button:is(:hover, :focus) {
 	background-color: var(--orange);
 	cursor: pointer;
 	color: var(--neutral-1);
+    outline: none;
 }
 
 span {
 	color: inherit;
 }
 
-button:hover {
+button#submit:is(:hover, :focus) {
 	background-color: var(--neutral-1);
 	color: var(--orange);
 	cursor: pointer;
+    outline: none;
 }
 
 .selected {
