@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url(./assets/KumbhSans-VariableFont.ttf) format("truetype");
+    font-display: swap;
+}
+
+:root {
+    line-height: 1em;
+    
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray-950: #1d2026;
+    --color-gray-500: #69707d;
+    --color-gray-300: #c3cad9;
+    --color-gray-100: #e4e9f2;
+    --color-gray-50: #f6f8fd;
+    --color-orange-500: #ff7e1b;
+    --color-orange-300: #ffab6a;
+}
+
+@theme {
+    --font-display: "Kumbh Sans", "sans-serif";
+    --text-preset-1: 2.75rem;
+    --text-preset-1--line-height: 3rem;
+    --text-preset-2: 1.75rem;
+    --text-preset-2--line-height: 2rem;
+    --text-preset-3: 1rem;
+    --text-preset-3--line-height: 1.625rem;
+    --text-preset-4: 0.9375rem;
+    --text-preset-4--line-height: 1.625rem;
+    --text-preset-5: 0.8125rem;
+    --text-preset-5--line-height: 1rem;
+    --text-preset-6: 0.75rem;
+    --text-preset-6--line-height: 0.9375rem;
+}
+
+body {
+    @apply font-display overflow-x-hidden;
+}
+
+.nav-link {
+    @apply relative hover:text-gray-950 transition-all after:absolute after:w-0 after:h-1 after:bg-orange-500 after:content-[''] after:-bottom-12 after:right-0 hover:after:w-full after:transition-all after:ease-in-out;
+}
+
+button {
+    @apply cursor-pointer
+}
