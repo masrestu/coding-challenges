@@ -1,15 +1,15 @@
-// import { useState } from 'react'
-
+import CartProvider from "./components/CartProvider"
 import Navbar from "./components/Navbar"
+import ProductPage from "./components/ProductPage"
 
 function App() {
-//   const [count, setCount] = useState(0)
 
-  return (
-    <>
-        <Navbar />
-    </>
-  )
+    return (
+        <CartProvider>
+            <Navbar />
+            <ProductPage />
+        </CartProvider>
+    )
 }
 
 export default App

@@ -1,24 +1,40 @@
+import Cart from "./Cart"
+import SideNav from "./SideNav"
+import ToggleProvider from "./ToggleProvider"
+import ToggleOn from "./ToggleOn"
+import ToggleButton from "./ToggleButton"
+
 export default function Navbar() {
-    return <nav className="navbar pb-8 flex justify-between border-b-1 border-gray-100">
-        <div className="logo-and-menu flex gap-14 items-center h-12.5">
-            <a href="/">
-                <img src="images/logo.svg" alt="Website Logo" />
-            </a>
-            <ul className="flex gap-8 text-preset-4 text-gray-500">
-                <li><a href="" className="nav-link">Collections</a></li>
-                <li><a href="" className="nav-link">Men</a></li>
-                <li><a href="" className="nav-link">Women</a></li>
-                <li><a href="" className="nav-link">About</a></li>
-                <li><a href="" className="nav-link">Contact</a></li>
-            </ul>
-        </div>
-        <div className="cart-and-profile flex items-center gap-12">
-            <button type="button">
-                <img src="images/icon-cart.svg" alt="" />
-            </button>
-            <button type="button" className="size-12.5">
-                <img src="images/image-avatar.png" alt="" />
-            </button>
-        </div>
-    </nav>
+    return <>
+        <nav className="navbar">
+            <div className="logo-and-menu">
+                <div className="lg:hidden">
+                    <ToggleProvider>
+                        <ToggleButton>
+                            <img src="images/icon-menu.svg" alt="" />
+                        </ToggleButton>
+                        <ToggleOn>
+                            <SideNav />
+                        </ToggleOn>
+                    </ToggleProvider>
+                </div>
+                <a href="/">
+                    <img src="images/logo.svg" alt="Website Logo" />
+                </a>
+                <ul>
+                    <li><a href="" className="nav-link">Collections</a></li>
+                    <li><a href="" className="nav-link">Men</a></li>
+                    <li><a href="" className="nav-link">Women</a></li>
+                    <li><a href="" className="nav-link">About</a></li>
+                    <li><a href="" className="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div className="cart-and-profile">
+                <Cart />
+                <button type="button" className="btn-profile" aria-label="Edit Profile">
+                    <img src="images/image-avatar.png" alt="" />
+                </button>
+            </div>
+        </nav>
+    </>
 }

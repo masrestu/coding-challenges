@@ -1,49 +1,254 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "Kumbh Sans";
-    src: url(./assets/KumbhSans-VariableFont.ttf) format("truetype");
-    font-display: swap;
+  font-family: "Kumbh Sans";
+  src: url(./assets/KumbhSans-VariableFont.ttf) format("truetype");
+  font-display: swap;
 }
 
 :root {
-    line-height: 1em;
-    
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-gray-950: #1d2026;
-    --color-gray-500: #69707d;
-    --color-gray-300: #c3cad9;
-    --color-gray-100: #e4e9f2;
-    --color-gray-50: #f6f8fd;
-    --color-orange-500: #ff7e1b;
-    --color-orange-300: #ffab6a;
+  line-height: 1em;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-950: #1d2026;
+  --color-gray-500: #69707d;
+  --color-gray-300: #c3cad9;
+  --color-gray-100: #e4e9f2;
+  --color-gray-50: #f6f8fd;
+  --color-orange-500: #ff7e1b;
+  --color-orange-300: #ffab6a;
+
+  --fs-1: 2.75rem;
+  --fs-2: 1.75rem;
+  --fs-3: 1rem;
+  --fs-4: 0.9375rem;
+  --fs-5: 0.8125rem;
+  --fs-6: 0.75rem;
+  --fs-7: 0.625rem;
 }
 
 @theme {
-    --font-display: "Kumbh Sans", "sans-serif";
-    --text-preset-1: 2.75rem;
-    --text-preset-1--line-height: 3rem;
-    --text-preset-2: 1.75rem;
-    --text-preset-2--line-height: 2rem;
-    --text-preset-3: 1rem;
-    --text-preset-3--line-height: 1.625rem;
-    --text-preset-4: 0.9375rem;
-    --text-preset-4--line-height: 1.625rem;
-    --text-preset-5: 0.8125rem;
-    --text-preset-5--line-height: 1rem;
-    --text-preset-6: 0.75rem;
-    --text-preset-6--line-height: 0.9375rem;
+  --font-display: "Kumbh Sans", "sans-serif";
+  --text-preset-1: clamp(var(--fs-2), 1.5rem + 1.5vw, var(--fs-1));
+  --text-preset-1--line-height: 3rem;
+  --text-preset-2: 1.75rem;
+  --text-preset-2--line-height: 2rem;
+  --text-preset-3: 1rem;
+  --text-preset-3--line-height: 1.625rem;
+  --text-preset-4: 0.9375rem;
+  --text-preset-4--line-height: 1.625rem;
+  --text-preset-5: 0.8125rem;
+  --text-preset-5--line-height: 1rem;
+  --text-preset-6: 0.75rem;
+  --text-preset-6--line-height: 0.9375rem;
+  --text-preset-7: 0.625rem;
+  --text-preset-7--line-height: 0.625rem;
+
+  --animate-fade-in: fadeIn 150ms ease-in forwards;
+  --animate-slide-right: slideRight 150ms ease-in 150ms forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 }
 
 body {
-    @apply font-display overflow-x-hidden;
+  @apply font-display overflow-x-hidden relative flex justify-center;
+}
+
+#root {
+  @apply mt-5 max-w-152 md:mx-19 md:mt-7 md:max-w-277.5 lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_1fr] lg:grid lg:gap-y-24 lg:gap-x-10 transition-all;
 }
 
 .nav-link {
-    @apply relative hover:text-gray-950 transition-all after:absolute after:w-0 after:h-1 after:bg-orange-500 after:content-[''] after:-bottom-12 after:right-0 hover:after:w-full after:transition-all after:ease-in-out;
+  @apply relative hover:text-gray-950 transition-all after:absolute after:w-0 after:h-1 after:bg-orange-500 after:content-[''] after:-bottom-12 after:right-0 hover:after:w-full after:transition-all after:ease-in-out;
 }
 
 button {
-    @apply cursor-pointer
+  @apply cursor-pointer focus:outline-none relative;
+}
+
+/* PrimaryButton */
+.primary-button {
+  @apply flex items-center gap-4 justify-center h-14 w-full bg-orange-500 hover:bg-orange-300 rounded-[.625rem] text-gray-950 font-bold disabled:cursor-not-allowed disabled:bg-orange-300;
+}
+
+.quantity-box {
+  @apply flex justify-between items-center h-14 bg-gray-50 w-full p-4 rounded-[0.625rem] text-gray-950 font-bold;
+}
+
+/* SideNav */
+.side-nav {
+  @apply flex flex-col pt-6 md:pt-12 bg-gray-50 ps-6 md:ps-20 gap-14 h-full w-2/3 max-w-75 animate-slide-right -translate-x-full fixed left-0 top-0 z-50;
+}
+
+.side-nav > .nav {
+  @apply grid gap-y-6 font-bold text-lg/6.5;
+}
+
+.overlay-close {
+  @apply w-fit group-[.lightbox]:fill-white group-[.lightbox]:size-5 group-[.lightbox]:hover:fill-orange-500 transition-all;
+}
+
+/* Navbar */
+.navbar {
+  @apply flex justify-between border-b-1 border-gray-100 px-6 pb-6 md:px-0 md:pb-8 md:items-center lg:col-span-2;
+}
+
+.logo-and-menu {
+  @apply flex gap-4 lg:gap-14 items-end lg:items-center h-fit lg:h-12.5;
+}
+
+.logo-and-menu > ul {
+  @apply hidden lg:flex gap-8 text-preset-4 text-gray-500;
+}
+
+.cart-and-profile {
+  @apply flex items-center gap-6 md:gap-12 md:relative;
+}
+
+.cart-badge {
+  @apply absolute content-[data-[value]] -top-1 -right-1.5 bg-orange-500 text-preset-7 grid place-items-center w-4.25 h-3.25 rounded-md text-white;
+}
+
+.btn-profile {
+  @apply size-6 md:size-12.5 transition-all;
+}
+
+/* Cart */
+.cart-icon {
+  @apply fill-gray-500 peer-[.cart-badge]:fill-gray-950;
+}
+
+/* PreviewCart */
+.preview-cart {
+  @apply shadow w-90 grid absolute left-1/2 -translate-x-1/2 md:-translate-x-[calc(50%_-_0.6875rem)] bg-white top-14 rounded-[0.675rem] z-50 md:left-0;
+}
+
+.cart-item {
+  @apply flex items-center justify-between gap-4 text-gray-500;
+}
+
+.cart-item-image {
+  @apply size-12.5 rounded-sm;
+}
+
+.preview-header {
+  @apply px-3 py-6 text-gray-950 text-preset-3 font-bold border-b-2 border-gray-100;
+}
+
+.cart-list {
+  @apply min-h-45 flex flex-col text-preset-3 p-6 gap-6 items-center justify-center;
+}
+
+.empty-cart {
+  @apply font-bold text-gray-500;
+}
+
+/* ProductImages */
+.product-carousel {
+  @apply h-75 overflow-hidden relative md:rounded-[0.9375rem] md:h-72.5 md:my-12 lg:my-0 lg:mx-11 lg:h-full transition-all lg:rounded-none lg:flex lg:flex-col lg:gap-8;
+}
+
+.product-carousel img {
+  @apply object-cover object-center w-full md:object-[center_65%] lg:h-auto lg:aspect-square lg:rounded-[0.9375rem];
+}
+
+.main-image-control {
+  @apply relative h-full lg:h-auto;
+}
+
+.image-control-wrapper {
+  @apply absolute inset-0 lg:-inset-x-7 flex items-center justify-between p-4 lg:hidden group-[.lightbox]:flex group-[.lightbox]:p-0;
+}
+
+.slider-control-btn {
+  @apply rounded-full flex items-center justify-center size-10 bg-white lg:size-14 stroke-gray-950 hover:stroke-orange-500 transition-all;
+}
+
+.slider-control-btn svg {
+  @apply w-1.5 lg:w-2 aspect-[1/2];
+}
+
+.main-image-thumbnails {
+  @apply hidden lg:flex lg:gap-8 group-[.lightbox]:px-13 group-[.lightbox]:pt-4;
+}
+
+.main-image-thumbnails button {
+  @apply rounded-[0.9375rem] overflow-hidden after:transition-all ease-in-out border-2 border-transparent;
+}
+
+.main-image-thumbnails button:hover,
+.main-image-thumbnails button.selected {
+  @apply relative after:absolute after:inset-0 after:content-[''] after:bg-white/75 after:z-20;
+}
+
+.main-image-thumbnails button.selected {
+  @apply border-orange-500;
+}
+
+/* ProductDetails */
+.product-details {
+  @apply px-6 mt-6 text-gray-500 grid gap-y-8 md:px-0 md:gap-y-6 lg:mx-11 lg:flex lg:flex-col justify-center lg:gap-8 lg:mt-0;
+}
+
+.product-info,
+.product-title-and-company {
+  @apply grid gap-y-4 text-preset-4 md:gap-y-6 md:text-preset-3;
+}
+
+.product-info {
+  @apply lg:gap-y-8;
+}
+
+.product-company {
+  @apply uppercase text-preset-6 tracking-widest font-bold md:text-preset-5;
+}
+
+.product-title {
+  @apply text-gray-950 text-preset-2 font-bold md:text-preset-1;
+}
+
+.price {
+  @apply flex items-center justify-between font-bold md:flex-col md:w-fit md:items-start md:gap-2 md:text-preset-3;
+}
+
+.price-and-discount {
+  @apply flex gap-4 md:gap-6;
+}
+
+.discounted-price {
+  @apply text-gray-950 text-preset-2;
+}
+
+.discount-badge {
+  @apply rounded-md bg-black text-white text-preset-3 grid place-items-center w-12.75 h-6.75;
+}
+
+.original-price {
+  @apply text-preset-3 line-through;
+}
+
+.qty-and-cta {
+  @apply grid gap-y-4 md:flex md:gap-2 lg:grid lg:gap-x-4 lg:grid-cols-[33fr_56fr];
+}
+
+/* Utilites */
+.overlay {
+  @apply fixed inset-0 bg-black/75 opacity-0 animate-fade-in z-40;
 }
