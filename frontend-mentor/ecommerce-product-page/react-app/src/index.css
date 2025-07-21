@@ -7,7 +7,97 @@
 }
 
 :root {
-  line-height: 1em;
+    line-height: 1em;
+
+  --space-0: 0rem;
+  --space-0\.9375: 0.9375rem;
+  --space-1: 1rem;
+  --space-1\.25: 1.25rem;
+  --space-1\.5: 1.5rem;
+  --space-1\.75: 1.75rem;
+  --space-2: 2rem;
+  --space-2\.75: 2.75rem;
+  --space-3: 3rem;
+  --space-3\.125: 3.125rem;
+  --space-4\.75: 4.75rem;
+  --space-9\.5: 9.5rem;
+  --space-11: 11rem;
+  
+  --vw-sm: 23.4325rem;
+  --vw-md: 48rem;
+  --vw-lg: 64rem;
+  --vw-xl: 80rem;
+
+  /* padding inline navbar */
+  --px-to-md: clamp(
+    var(--space-0),
+    calc((var(--vw-md) - 100vw) * 0.06),
+    var(--space-1\.5)
+  );
+
+  /* padding bottom navbar */
+  --navbar-pb-to-md: clamp(
+    var(--space-1\.5),
+    calc(var(--space-1\.5) + (100vw - var(--vw-sm)) * 0.02),
+    var(--space-2)
+  );
+
+  /* margin top root */
+  --root-my-s-to-md: clamp(
+    var(--space-1\.25),
+    calc(var(--space-1\.25) + (100vw - var(--vw-sm)) * 0.02),
+    var(--space-1\.75)
+  );
+
+  /* margin inline root */
+  --root-mx-to-md: clamp(
+    var(--space-0),
+    calc((100vw - (var(--vw-md) - var(--space-9\.5))) * 0.5),
+    var(--space-4\.75)
+  );
+
+  /* max width root */
+  --max-content-x-md: 48rem;
+  --max-content-x-lg: 78.875rem;
+  --root-content-x-max: clamp(
+    var(--max-content-x-md),
+    calc(100vw - var(--space-9\.5)),
+    var(--max-content-x-lg)
+  );
+
+  /* size btn profile */
+  --profile-btn: clamp(
+    var(--space-1\.5),
+    calc(var(--space-1\.5) + (100vw - var(--vw-sm)) * 0.07),
+    var(--space-3\.125)
+  );
+
+  /* margin block main image */
+  --main-image-block-to-md: clamp(
+    var(--space-0),
+    calc((100vw - var(--vw-sm)) * 0.12),
+    var(--space-3)
+  );
+
+  /* border radius main image */
+  --main-image-radius: clamp(
+    var(--space-0),
+    calc((100vw - var(--vw-sm)) * 0.1),
+    var(--space-0\.9375)
+  );
+
+  /* gap cart btn to profile btn */
+  --cart-profile-gap-sm: clamp(
+    var(--space-1\.5),
+    calc(var(--space-1\.5) + (100vw - var(--vw-sm)) * 0.06),
+    var(--space-3)
+  );
+
+  /* padding inline product */
+  --product-mx-to-xl: clamp(var(--space-0), calc((100vw - var(--vw-lg)) * 0.296875), var(--space-2\.75));
+  
+  /* gap product image */
+  --product-image-gap: clamp(var(--space-1), calc(var(--space-1) + (100vw - 64rem) * 0.0625), var(--space-2));
 
   --color-black: #000000;
   --color-white: #ffffff;
@@ -18,6 +108,9 @@
   --color-gray-50: #f6f8fd;
   --color-orange-500: #ff7e1b;
   --color-orange-300: #ffab6a;
+
+  --fs-height-1: 3rem;
+  --fs-height-2: 2rem;
 
   --fs-1: 2.75rem;
   --fs-2: 1.75rem;
@@ -30,10 +123,18 @@
 
 @theme {
   --font-display: "Kumbh Sans", "sans-serif";
-  --text-preset-1: clamp(var(--fs-2), 1.5rem + 1.5vw, var(--fs-1));
+  --text-preset-1: var(--fs-1);
   --text-preset-1--line-height: 3rem;
-  --text-preset-2: 1.75rem;
-  --text-preset-2--line-height: 2rem;
+  --text-preset-2: clamp(
+    var(--fs-2),
+    calc(var(--fs-2) + (100vw - var(--vw-sm)) * 0.04),
+    var(--fs-1)
+  );
+  --text-preset-2--line-height: clamp(
+    var(--fs-height-2),
+    calc(2rem + (100vw - var(--vw-sm)) * 0.04),
+    var(--fs-height-1)
+  );
   --text-preset-3: 1rem;
   --text-preset-3--line-height: 1.625rem;
   --text-preset-4: 0.9375rem;
@@ -72,7 +173,7 @@ body {
 }
 
 #root {
-  @apply mt-5 max-w-152 md:mx-19 md:mt-7 md:max-w-277.5 lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_1fr] lg:grid lg:gap-y-24 lg:gap-x-10 transition-all;
+  @apply mt-(--root-my-s-to-md) max-w-(--root-content-x-max) px-(--root-mx-to-md) md:mt-7 lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_1fr] lg:grid lg:gap-y-24 lg:gap-x-10 transition-all relative;
 }
 
 .nav-link {
@@ -107,7 +208,7 @@ button {
 
 /* Navbar */
 .navbar {
-  @apply flex justify-between border-b-1 border-gray-100 px-6 pb-6 md:px-0 md:pb-8 md:items-center lg:col-span-2;
+  @apply flex justify-between border-b-1 border-gray-100 px-(--px-to-md) pb-(--navbar-pb-to-md) items-center lg:col-span-2 transition-all;
 }
 
 .logo-and-menu {
@@ -119,7 +220,7 @@ button {
 }
 
 .cart-and-profile {
-  @apply flex items-center gap-6 md:gap-12 md:relative;
+  @apply flex items-center gap-(--cart-profile-gap-sm);
 }
 
 .cart-badge {
@@ -127,7 +228,7 @@ button {
 }
 
 .btn-profile {
-  @apply size-6 md:size-12.5 transition-all;
+  @apply size-(--profile-btn) md:size-12.5 transition-all;
 }
 
 /* Cart */
@@ -137,7 +238,7 @@ button {
 
 /* PreviewCart */
 .preview-cart {
-  @apply shadow w-90 grid absolute left-1/2 -translate-x-1/2 md:-translate-x-[calc(50%_-_0.6875rem)] bg-white top-14 rounded-[0.675rem] z-50 md:left-0;
+  @apply shadow w-90 grid absolute bg-white top-16.5 rounded-[0.675rem] z-50 right-2 transition-all;
 }
 
 .cart-item {
@@ -162,15 +263,23 @@ button {
 
 /* ProductImages */
 .product-carousel {
-  @apply h-75 overflow-hidden relative md:rounded-[0.9375rem] md:h-72.5 md:my-12 lg:my-0 lg:mx-11 lg:h-full transition-all lg:rounded-none lg:flex lg:flex-col lg:gap-8;
+  @apply h-75 relative md:h-72.5 my-(--main-image-block-to-md) md:my-12 lg:my-0 lg:mx-(--product-mx-to-xl) lg:h-full transition-all lg:flex lg:flex-col lg:gap-(--product-image-gap) overflow-hidden rounded-(--main-image-radius) lg:rounded-none;
 }
 
 .product-carousel img {
-  @apply object-cover object-center w-full md:object-[center_65%] lg:h-auto lg:aspect-square lg:rounded-[0.9375rem];
+  @apply object-cover object-center w-full md:object-[center_65%] lg:h-auto lg:aspect-square rounded-(--main-image-radius);
 }
 
 .main-image-control {
   @apply relative h-full lg:h-auto;
+}
+
+.main-image-control .overlay {
+  @apply hidden lg:block;
+}
+
+.main-image-control .lightbox {
+  @apply hidden lg:flex;
 }
 
 .image-control-wrapper {
@@ -186,7 +295,7 @@ button {
 }
 
 .main-image-thumbnails {
-  @apply hidden lg:flex lg:gap-8 group-[.lightbox]:px-13 group-[.lightbox]:pt-4;
+  @apply hidden lg:flex lg:gap-(--product-image-gap) group-[.lightbox]:px-13 group-[.lightbox]:pt-4;
 }
 
 .main-image-thumbnails button {
@@ -204,7 +313,7 @@ button {
 
 /* ProductDetails */
 .product-details {
-  @apply px-6 mt-6 text-gray-500 grid gap-y-8 md:px-0 md:gap-y-6 lg:mx-11 lg:flex lg:flex-col justify-center lg:gap-8 lg:mt-0;
+  @apply px-(--px-to-md) mt-6 text-gray-500 grid gap-y-8 md:gap-y-6 lg:mx-(--product-mx-to-xl) lg:flex lg:flex-col justify-center lg:gap-8 lg:mt-0;
 }
 
 .product-info,
@@ -221,7 +330,7 @@ button {
 }
 
 .product-title {
-  @apply text-gray-950 text-preset-2 font-bold md:text-preset-1;
+  @apply text-gray-950 text-preset-2 font-bold;
 }
 
 .price {
@@ -233,7 +342,7 @@ button {
 }
 
 .discounted-price {
-  @apply text-gray-950 text-preset-2;
+  @apply text-gray-950 text-(length:--fs-2)/8;
 }
 
 .discount-badge {

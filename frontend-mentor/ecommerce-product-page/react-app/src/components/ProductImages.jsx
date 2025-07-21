@@ -38,7 +38,7 @@ export default function ProductImages(props) {
     ))
 
     return <div className="product-carousel">
-        <div className="main-image-control relative">
+        <div className="main-image-control">
             <ToggleProvider>
                 <ToggleButton>
                     <img src={productImageList[currentImage]} alt="" />
