@@ -94,6 +94,15 @@ Welcome to my collection of coding challenge solutions from FrontendMentor. This
 </details>
 
 <details>
+<summary>Ecommerce product page</summary>
+    <ul>
+        <li><a href="https://ecommerce-product-page-sooty-ten.vercel.app/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/ecommerce-product-page/react-app/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6">Challenge Page</a></li>
+    </ul>
+</details>
+
+<details>
 <summary>Expenses chart component</summary>
     <ul>
         <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/expenses-chart-component/">Live Preview</a></li>
