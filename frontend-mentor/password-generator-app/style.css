@@ -23,7 +23,6 @@
     --color-white: #ffffff;
     --spacing: 0.25rem;
     --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
@@ -699,12 +698,12 @@ button, input, label {
 input[type="checkbox"]:checked + div > svg {
   display: block;
 }
-input[type="range"]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
   height: calc(var(--spacing) * 2);
   --tw-gradient-position: var(--slider-track-color);
   background-image: linear-gradient(var(--tw-gradient-stops,var(--slider-track-color)));
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb {
   margin-top: calc(var(--spacing) * -2.5);
   width: calc(var(--spacing) * 7);
   height: calc(var(--spacing) * 7);
@@ -719,7 +718,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-color: var(--color-green-200);
   }
 }
-input[type="range"]:active::-webkit-slider-thumb {
+input[type="range"]:active::-webkit-slider-thumb, input[type="range"]:active::-moz-range-thumb {
   border-style: var(--tw-border-style);
   border-width: 2px;
   border-color: var(--color-green-200);

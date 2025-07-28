@@ -74,14 +74,14 @@ input[type="checkbox"]:checked + div > svg {
     @apply block
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
     @apply h-2 bg-linear-(--slider-track-color)
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb {
     @apply size-7 -mt-2.5 bg-grey-200 appearance-none rounded-full focus:border-2 focus:border-green-200
 }
 
-input[type="range"]:active::-webkit-slider-thumb {
+input[type="range"]:active::-webkit-slider-thumb, input[type="range"]:active::-moz-range-thumb {
     @apply bg-grey-850 border-2 border-green-200
 }
