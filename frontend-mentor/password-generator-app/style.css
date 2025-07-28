@@ -51,7 +51,7 @@
     --spacing-700: 3.5rem;
     --spacing-800: 4.0625rem;
     --spacing-900: 4.5rem;
-    --font-display: "JetBrains Mono", sans-serif;
+    --font-display: "JetBrainsMono", sans-serif;
     --char-length-pct: 50%;
     --slider-track-color: to right, var(--color-green-200) var(--char-length-pct),
     var(--color-grey-850) var(--char-length-pct);
