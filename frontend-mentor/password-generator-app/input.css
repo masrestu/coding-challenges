@@ -1,87 +1,118 @@
 @font-face {
-    font-family: "JetBrainsMono";
-    src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
-    font-display: swap;
-    font-weight: 100 800;
+  font-family: "JetBrainsMono";
+  src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+  font-display: swap;
+  font-weight: 100 800;
 }
 
 @import "tailwindcss";
 
-button, input, label {
-    font-family: inherit;
+button,
+input,
+label {
+  font-family: inherit;
 }
 
 @theme {
-    --color-white: #ffffff;
-    --color-black: #000000;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-    --color-grey-200: #e6e5ea;
-    --color-grey-600: #817d92;
-    --color-grey-700: #54535b;
-    --color-grey-800: #24232c;
-    --color-grey-850: #18171f;
-    --color-grey-900: #14131b;
-    --color-grey-950: #08070b;
+  --color-grey-200: #e6e5ea;
+  --color-grey-600: #817d92;
+  --color-grey-700: #54535b;
+  --color-grey-800: #24232c;
+  --color-grey-850: #18171f;
+  --color-grey-900: #14131b;
+  --color-grey-950: #08070b;
 
-    --color-green-200: #a4ffaf;
+  --color-green-200: #a4ffaf;
 
-    --color-yellow-300: #f8cd65;
+  --color-yellow-300: #f8cd65;
 
-    --color-orange-400: #fb7c58;
-    
-    --color-red-500: #f64a4a;
+  --color-orange-400: #fb7c58;
 
-    --text-3xl: 2rem;
+  --color-red-500: #f64a4a;
 
-    --spacing-100: .5rem;
-    --spacing-200: 1rem;
-    --spacing-250: 1.0625rem;
-    --spacing-300: 1.5rem;
-    --spacing-350: 1.75rem;
-    --spacing-400: 2rem;
-    --spacing-550: 2.625rem;
-    --spacing-700: 3.5rem;
-    --spacing-800: 4.0625rem;
-    --spacing-900: 4.5rem;
-    --spacing-1000: 5rem;
-    --spacing-1300: 6.5rem;
-    --spacing-1600: 8rem;
-    --spacing-2000: 10rem;
-    --spacing-2200: 11rem;
-    --spacing-2300: 11.5rem;
+  --text-3xl: 2rem;
 
-    --font-display: "JetBrains Mono", sans-serif;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-250: 1.0625rem;
+  --spacing-300: 1.5rem;
+  --spacing-350: 1.75rem;
+  --spacing-400: 2rem;
+  --spacing-550: 2.625rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4.0625rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1300: 6.5rem;
+  --spacing-1600: 8rem;
+  --spacing-2000: 10rem;
+  --spacing-2200: 11rem;
+  --spacing-2300: 11.5rem;
 
-    --char-length-pct: 50%;
+  --font-display: "JetBrains Mono", sans-serif;
 
-    --slider-track-color: to right, var(--color-green-200) var(--char-length-pct), var(--color-grey-850) var(--char-length-pct);
+  --char-length-pct: 50%;
 
-    --indicator-fill-1: transparent;
-    --indicator-fill-2: transparent;
-    --indicator-fill-3: transparent;
-    --indicator-fill-4: transparent;
-    --indicator-stroke-1: var(--color-grey-200);
-    --indicator-stroke-2: var(--color-grey-200);
-    --indicator-stroke-3: var(--color-grey-200);
-    --indicator-stroke-4: var(--color-grey-200);
+  --slider-track-color: to right, var(--color-green-200) var(--char-length-pct),
+    var(--color-grey-850) var(--char-length-pct);
 
-    --copy-btn-gradient: to right, transparent 0%, var(--color-grey-800) 20%;
+  --indicator-fill-1: transparent;
+  --indicator-fill-2: transparent;
+  --indicator-fill-3: transparent;
+  --indicator-fill-4: transparent;
+  --indicator-stroke-1: var(--color-grey-200);
+  --indicator-stroke-2: var(--color-grey-200);
+  --indicator-stroke-3: var(--color-grey-200);
+  --indicator-stroke-4: var(--color-grey-200);
 
-    --body-gradient: to right, var(--color-gray-900), var(--color-grey-950);
+  --copy-btn-gradient: to right, transparent 0%, var(--color-grey-800) 20%;
+
+  --body-gradient: to right, var(--color-gray-900), var(--color-grey-950);
 }
 
-input[type="checkbox"]:checked + div > svg {
-    @apply block
+input[type="checkbox"]:checked + span > svg {
+  @apply block;
 }
 
-input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
-    @apply h-2 bg-linear-(--slider-track-color)
+@utility runnable-track {
+  @apply h-2 bg-linear-(--slider-track-color);
 }
 
-input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb {
-    @apply size-7 -mt-2.5 bg-grey-200 appearance-none rounded-full focus:border-2 focus:border-green-200
+@utility slider-thumb {
+  @apply size-7 -mt-2.5 bg-grey-200 appearance-none rounded-full focus:border-2 focus:border-green-200;
 }
 
-input[type="range"]:active::-webkit-slider-thumb, input[type="range"]:active::-moz-range-thumb {
-    @apply bg-grey-850 border-2 border-green-200
+@utility slider-thumb-active {
+  @apply bg-grey-850 border-2 border-green-200;
 }
+
+input[type="range"] {
+  @apply [&::-webkit-slider-runnable-track]:runnable-track [&::-moz-range-track]:runnable-track [&::-webkit-slider-thumb]:slider-thumb [&::-moz-range-thumb]:slider-thumb active:[&::-webkit-slider-thumb]:slider-thumb-active active:[&::-moz-range-thumb]:slider-thumb-active;
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+  @apply runnable-track;
+}
+
+input[type="range"]::-moz-range-track {
+  @apply runnable-track;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply slider-thumb;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply slider-thumb;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  @apply slider-thumb-active;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  @apply slider-thumb-active;
+} */
