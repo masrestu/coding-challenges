@@ -24,8 +24,6 @@ export default function CartProvider({ children }) {
         }
     }
 
-    console.log(cart)
-
     return (
         <CartContext.Provider value={{ cart, removeProduct, addOrUpdateProduct }}>
             {children}
