@@ -46,7 +46,6 @@
     --color-grey-950: #08070b;
     --spacing-100: .5rem;
     --spacing-200: 1rem;
-    --spacing-300: 1.5rem;
     --spacing-350: 1.75rem;
     --spacing-400: 2rem;
     --spacing-550: 2.625rem;
@@ -299,9 +298,6 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
   }
@@ -310,9 +306,6 @@
   }
   .max-w-\[33\.75rem\] {
     max-width: 33.75rem;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-translate-y-40 {
     --tw-translate-y: calc(var(--spacing) * -40);
@@ -323,9 +316,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .appearance-none {
     appearance: none;
@@ -368,10 +358,6 @@
   }
   .overflow-hidden {
     overflow: hidden;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -436,9 +422,6 @@
   .px-200 {
     padding-inline: var(--spacing-200);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
@@ -460,10 +443,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-base\/tight {
     font-size: var(--text-base);
@@ -493,9 +472,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .accent-green-200 {
     accent-color: var(--color-green-200);
@@ -716,6 +692,9 @@
       line-height: var(--leading-snug);
     }
   }
+}
+button, input, label {
+  font-family: inherit;
 }
 input[type="checkbox"]:checked + div > svg {
   display: block;

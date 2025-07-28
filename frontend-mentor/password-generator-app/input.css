@@ -7,6 +7,10 @@
 
 @import "tailwindcss";
 
+button, input, label {
+    font-family: inherit;
+}
+
 @theme {
     --color-white: #ffffff;
     --color-black: #000000;
