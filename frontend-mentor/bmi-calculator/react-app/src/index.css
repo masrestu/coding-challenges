@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter-VariableFont_slnt,wght.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 400 700;
+}
+
+@theme {
+    --rounded-result-box: 5rem;
+    --rounded-tips-box: 2.25rem;
+    --custom-drop-shadow: 1rem 2rem 3.5rem #8FAECF63;
+    --font-inter: "Inter", "Arial", "sans-serif";
+    --color-gray-500: #5e6e85;
+    --color-gray-300: #acc1de;
+
+    --color-blue-900: #253347;
+    --color-blue-500: #345ff6;
+    --color-blue-300: #b3d3f1;
+    --color-blue-100: #e1e7fe;
+
+    --color-gradient: to right, rgba(214, 252, 254, 0%) 0%, rgba(214, 230, 254, 100%) 200%;
+
+    --radius-500: 2.1875rem;
+
+    --fs-900: 4rem;
+    --fs-800: 3rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+
+    --lh-150: 150%;
+    --lh-120: 120%;
+    --lh-110: 110%;
+
+    --ls-tight: -0.05em;
+    --ls-normal: 0em;
+
+    --text-preset-1: 4rem; 
+    --text-preset-1--line-height: var(--lh-110); 
+    --text-preset-1--letter-spacing: var(--ls-tight); 
+    --text-preset-1--font-weight: 600; 
+
+    --text-preset-2: 3rem; 
+    --text-preset-2--line-height: var(--lh-110); 
+    --text-preset-2--letter-spacing: var(--ls-tight); 
+    --text-preset-2--font-weight: 600; 
+
+    --text-preset-3: 2rem; 
+    --text-preset-3--line-height: var(--lh-110); 
+    --text-preset-3--letter-spacing: var(--ls-tight); 
+    --text-preset-3--font-weight: 600; 
+
+    --text-preset-4: 1.5rem; 
+    --text-preset-4--line-height: var(--lh-120); 
+    --text-preset-4--letter-spacing: var(--ls-tight); 
+    --text-preset-4--font-weight: 600; 
+
+    --text-preset-5: 1.25rem; 
+    --text-preset-5--line-height: var(--lh-120); 
+    --text-preset-5--letter-spacing: var(--ls-tight); 
+    --text-preset-5--font-weight: 600; 
+
+    --text-preset-6: 1rem; 
+    --text-preset-6--line-height: var(--lh-150); 
+    --text-preset-6--letter-spacing: var(--ls-normal); 
+
+    --text-preset-7: 0.875rem; 
+    --text-preset-7--line-height: var(--lh-150); 
+    --text-preset-7--letter-spacing: var(--ls-normal); 
+}
+
+body {
+    @apply font-inter;
+}
+
+#root {
+    @apply grid place-items-center;
+}
