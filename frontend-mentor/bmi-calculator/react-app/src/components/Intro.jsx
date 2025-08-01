@@ -106,8 +106,8 @@ export default function Intro() {
             <div className="grid grid-cols-2 gap-x-6">
                 {
                     Object.keys(measurementUnit).map(key => (
-                        <RadioButton 
-                            id={`mu-${key}`} 
+                        <RadioButton
+                            id={`mu-${key}`}
                             isChecked={currentUnit === key}
                             value={key}
                             onChange={handleUnitChange}
