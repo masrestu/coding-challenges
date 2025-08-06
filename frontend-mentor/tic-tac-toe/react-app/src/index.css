@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/Outfit-Bold.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/Outfit-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@theme {
+  --font-outfit: "Outfit", "sans-serif";
+
+  --color-primary-500: #118c87;
+  --color-primary-400: #31c3bd;
+  --color-primary-300: #65e9e4;
+
+  --color-secondary-500: #cc8b13;
+  --color-secondary-400: #f2b137;
+  --color-secondary-300: #ffc860;
+
+  --color-neutral-950: #10212a;
+  --color-neutral-900: #1a2a33;
+  --color-neutral-800: #1f3641;
+  --color-neutral-200: #6b8997;
+  --color-neutral-100: #a8bfc9;
+  --color-neutral-50: #dbe8ed;
+
+  --text-body: 0.875rem;
+  --text-body--letter-spacing: 0.8px;
+  --text-body--font-weight: 500;
+  --text-body--line-height: 129%;
+
+  --text-xs: 1rem;
+  --text-xs--letter-spacing: 1px;
+  --text-xs--font-weight: 700;
+  --text-xs--line-height: 125%;
+
+  --text-sm: 1.25rem;
+  --text-sm--letter-spacing: 1.25px;
+  --text-sm--font-weight: 700;
+  --text-sm--line-height: 125%;
+
+  --text-md: 1.5rem;
+  --text-md--letter-spacing: 1.5px;
+  --text-md--font-weight: 700;
+  --text-md--line-height: 125%;
+
+  --text-lg: 2.5rem;
+  --text-lg--letter-spacing: 2.5px;
+  --text-lg--font-weight: 700;
+
+  --inset-shadow-md: inset 0 -0.5rem var(--color-secondary-500);
+  --inset-shadow-xs: inset 0 -0.25rem var(--color-neutral-950);
+  --radius-10: 0.625rem;
+  --radius-15: 0.9375rem;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+body {
+  @apply font-outfit bg-neutral-900 text-neutral-100 text-body;
+}
+
+#root {
+    @apply flex justify-center items-start md:items-center min-h-svh
+}
+
+.wrapper {
+  @apply mx-6 flex flex-col items-center justify-center gap-8 [.playing]:justify-start py-6 [.playing]:gap-5 max-w-115 w-full md:py-0 md:gap-10 md:[.playing]:gap-4.75;
+}
+
+.btn-lg {
+  @apply w-full flex pt-3.5 pb-5.5 justify-center uppercase text-xs rounded-2xl inset-shadow-md bg-secondary-400 hover:bg-secondary-300 last:inset-shadow-primary-500 last:bg-primary-400 last:hover:bg-primary-300 md:pt-4.5 md:pb-6 md:text-sm transition;
+}
+
+.player-info {
+  @apply grid place-items-center bg-neutral-100 first:bg-primary-400 last:bg-secondary-400 rounded-10 w-full py-3 gap-0 md:rounded-15;
+}
+
+.label-info {
+  @apply text-body;
+}
+
+.score-info {
+  @apply text-sm md:text-md;
+}
