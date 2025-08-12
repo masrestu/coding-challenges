@@ -8,13 +8,14 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
 
     const isCpuTurn = vsMode === "cpu" && nextMark !== p1Mark
     useEffect(() => {
-        step.current = 0
+        step.current = isCpuTurn ? 1 : 0
     }, [round])
 
     // function delay(ms) {
     //     return new Promise(resolve => setTimeout(resolve, ms));
     // }
 
+    // console.log([isCpuTurn, nextMark])
     useEffect(() => {
         async function cpuAction() {
             step.current = step.current + 1
@@ -26,18 +27,30 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
                     cells[4].click()
                 } else {
                     let advisedCell
-                    const indexToWin = getIndexToLine(p1Mark === "x" ? "o" : "x")
-                    if (indexToWin !== null) {
-                        advisedCell = cells[indexToWin]
-                    } else {
-                        const indexToBlock = getIndexToLine(p1Mark)
-                        if (indexToBlock !== null)
-                            advisedCell = cells[indexToBlock]
-                    }
+                    const rivalMark = p1Mark === "x" ? "o" : "x"
 
+                    if (!advisedCell) {
+                        const indexToWin = getIndexToLine(rivalMark)
+                        advisedCell = indexToWin !== null ? cells[indexToWin] : advisedCell
+                        // console.log({indexToWin})
+                    }
+                    
+                    if (!advisedCell) {
+                        const indexToBlock = getIndexToLine(p1Mark)
+                        advisedCell = indexToBlock !== null ? cells[indexToBlock] : advisedCell
+                        // console.log({indexToBlock})
+                    }
+                    
+                    if (!advisedCell) {
+                        const indexToAttack = getIndexToLine(rivalMark)
+                        advisedCell = indexToAttack !== null ? cells[indexToAttack] : advisedCell
+                        // console.log({indexToAttack})
+                    }
+                    
                     if (!advisedCell) {
                         advisedCell = getRandomBlankCell()
                     }
+
 
                     advisedCell.click()
                 }
@@ -45,7 +58,7 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
         }
 
         cpuAction()
-    }, [isCpuTurn, nextMark])
+    }, [isCpuTurn, nextMark, round])
 
     const winConditions = [
         [0, 1, 2], [0, 4, 8], [0, 3, 6],
@@ -53,21 +66,30 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
         [3, 4, 5], [6, 7, 8],
     ]
 
-    function getIndexToLine(mark) {
+    function getIndexToLine(mark, isPreparing = false) {
+        // get current mark value on all cells
         const current = [...document.getElementsByName("cells")].map(element => element.value)
+        
         const rival = mark === "x" ? "o" : "x"
         let indexToMakeLine = null
+        
+        // get the index of all cells with requested mark
         const markPositions = [...current].reduce((pos, value, index) => {
             if (value !== mark) return [...pos]
             return [...pos, index]
         }, [])
 
+        // check winConditions that only need one index to make a line and that index is empty 
         for (const condition of winConditions) {
             const missingMark = [...condition].filter(cond => !markPositions.includes(cond))
             if (missingMark.length === 1 && current[missingMark[0]] !== rival) return missingMark[0]
         }
 
         return indexToMakeLine
+    }
+
+    function possibleAttack(mark) {
+
     }
 
     function getRandomBlankCell() {
@@ -77,9 +99,8 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
             if (value !== '') return [...pos]
             return [...pos, index]
         }, [])
-        const randomIndex = Math.floor(Math.random() * (blankCellIndex.length + 1))
-        // console.log("getRandomBlankCell", { elements, elementValues, blankCellIndex, randomIndex, "script": "Math.floor(Math.random() * (blankCellIndex.length + 1))" })
-
+        const randomIndex = Math.floor(Math.random() * blankCellIndex.length)
+        // console.log({blankCellIndex, randomIndex, blankIndex:blankCellIndex[randomIndex]})
         return elements[blankCellIndex[randomIndex]]
     }
 
