@@ -337,6 +337,15 @@ Welcome to my collection of coding challenge solutions from FrontendMentor. This
 </details>
 
 <details>
+<summary>Tic tac toe</summary>
+    <ul>
+        <li><a href="https://tictactoe-masrestu.vercel.app/">Live Preview</a></li>
+        <li><a href="https://github.com/masrestu/coding-challenges/tree/main/frontend-mentor/tic-tac-toe/react-app/">Source Code</a></li>
+        <li><a href="https://www.frontendmentor.io/challenges/tic-tac-toe-game-Re7ZF_E2v">Challenge Page</a></li>
+    </ul>
+</details>
+
+<details>
 <summary>Time tracking dashboard</summary>
     <ul>
         <li><a href="https://masrestu.github.io/coding-challenges/frontend-mentor/time-tracking-dashboard/">Live Preview</a></li>
