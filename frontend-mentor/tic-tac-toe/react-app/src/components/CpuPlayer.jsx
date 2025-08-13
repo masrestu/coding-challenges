@@ -33,24 +33,24 @@ export default function CpuPlayer({ vsMode, p1Mark }) {
                     if (!advisedCell) {
                         const indexToWin = getIndexToLine(rivalMark)
                         advisedCell = indexToWin !== null ? cells[indexToWin] : advisedCell
-                        action = "winning"
+                        // action = "winning"
                     }
                     
                     if (!advisedCell) {
                         const indexToBlock = getIndexToLine(p1Mark)
                         advisedCell = indexToBlock !== null ? cells[indexToBlock] : advisedCell
-                        action = "blocking"
+                        // action = "blocking"
                     }
                     
                     if (!advisedCell) {
                         const indexToTryToWin = getIndexToLine(rivalMark, true)
                         advisedCell = indexToTryToWin !== null ? cells[indexToTryToWin] : advisedCell
-                        action = "try to win"
+                        // action = "try to win"
                     }
                     
                     if (!advisedCell) {
                         advisedCell = getRandomBlankCell()
-                        action = "just random click"
+                        // action = "just random click"
                     }
                     console.log(action)
 
